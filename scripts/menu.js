@@ -1,9 +1,16 @@
 $(document).ready(function(){
     $(".menu-item").each(function(){
         $(this).hover(function(){
-            $(".pop_menu").fadeIn();
+            $(this)
+                .find(".pop_menu")
+                .addClass("mouse-in")
+                .stop().fadeIn();
         },function(){
-            $(".pop_menu").fadeOut();
-        })
-    })
-})
+            $(this)
+                .find(".pop_menu")
+                .rmClass("mouse-in")
+                .stop()
+                .fadeOut();
+        });
+    });
+});

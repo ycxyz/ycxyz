@@ -144,6 +144,7 @@
 }
 .pop_menu li{
     float:left;
+    width:100px;
     padding:5px 10px;
 }
 .pop_menu_head{
@@ -153,9 +154,6 @@
 }
 .pop_menu_tail{
     background-image:url(../images/pop_menu_tail.png);
-}
-.pop_menu{
-
 }
 /*+-----------------------------------------+  /pop_menu*/
 

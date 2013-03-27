@@ -60,6 +60,9 @@
     height:100px;
     background:#f88;
 }
+.nav{
+    position:relative;
+}
 .nav a{
     font-family:'黑体';
     text-decoration:none;
@@ -71,13 +74,11 @@
     padding-top:3px;
     padding-bottom:3px;
 }
-.nav .nav_body{
-    float:left;
-}
 .nav .nav_head{
     background-image:url(../images/nav_head.jpg);
 }
 .nav .nav_body{
+    position:relative;
     width:920px;
     float:left;
     height:43px;
@@ -131,8 +132,11 @@
 .pop_menu{
     position:absolute;
     left:0px;
-    top:60px;
+    z-index:9999;
     display:none;
+}
+.menu-item{
+    z-index:99;
 }
 /*pop_menu+-----------------------------------------+*/
 .pop_menu div{

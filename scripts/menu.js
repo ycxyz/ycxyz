@@ -1,9 +1,9 @@
 $(document).ready(function(){
     $(".menu-item").each(function(){
         $(this).hover(function(){
-            $(this).addClass("mousein").find(".pop_menu").fadeIn('slow');
+            $(".pop_menu").fadeIn();
         },function(){
-            $(this).removeClass("mousein").find(".pop_menu").fadeOut('slow');
+            $(".pop_menu").fadeOut();
         })
     })
 })

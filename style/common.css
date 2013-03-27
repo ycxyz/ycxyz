@@ -48,5 +48,9 @@ table {
 }
 /* /css reset }}}*/
 
+html{
+    background:#efefef;
+}
+
 /* vim: fdm=marker
  */

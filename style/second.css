@@ -108,6 +108,7 @@
     border-right:1px solid #111;
     border-left:1px solid #d8181a;
     font-size:15px;
+    position:relative;
 }
 .nav li .menu-btn{
     display:inline-block;
@@ -131,17 +132,29 @@
 }
 .pop_menu{
     position:absolute;
+    left:0px;
+    top:60px;
     display:none;
 }
 /*pop_menu+-----------------------------------------+*/
 .pop_menu div{
-    background:#aaa;
+    float:left;
 }
 .pop_menu li{
     float:left;
     padding:5px 10px;
 }
-.pop_menu
+.pop_menu_head{
+    width:8px;
+    height:34px;
+    background-image:url(../images/pop_menu_head.png);
+}
+.pop_menu_tail{
+    background-image:url(../images/pop_menu_tail.png);
+}
+.pop_menu{
+
+}
 /*+-----------------------------------------+  /pop_menu*/
 
 /*+-----------------overwrite css----------------------+*/

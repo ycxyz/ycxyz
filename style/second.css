@@ -8,7 +8,6 @@
     height:35px;
     margin-left:auto;
     margin-right:auto;
-    overflow:auto;
 }
 .top_func{
     float:left;
@@ -56,7 +55,6 @@
     width: 980px;
     margin-left:auto;
     margin-right:auto;
-    overflow:auto;
 }
 .header{
     height:100px;
@@ -86,7 +84,6 @@
     line-height:43px;
     padding-top:3px;
     padding-bottom:3px;
-    overflow:hidden;
     background-image:url(../images/nav_body.png);
 }
 .nav .nav_tail{

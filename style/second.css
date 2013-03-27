@@ -1,12 +1,12 @@
 .top {
     background: #ac0001;
     color: #fff;
-    height: 50px;
+    height: 35px;
 }
 .top_inner {
     width: 980px;
-    height:50px;
-    line-height:50px;
+    height:35px;
+    line-height:35px;
     margin-left:auto;
     margin-right:auto;
 }

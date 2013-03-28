@@ -51,6 +51,9 @@ table {
 html{
     background:#efefef;
 }
+.clear{
+    clear:both;
+}
 .top {
     background: #ac0001;
     color: #fff;
@@ -152,7 +155,7 @@ html{
 .nav a:visited{
     color:#88a;
 }
-.nav .menu-item{
+.nav .menu_item{
     float:left;
     height:42px;
     width:128px;
@@ -188,11 +191,11 @@ html{
     z-index:9999;
     display:none;
 }
-.menu-item{
+.menu_item{
     z-index:99;
 }
 /*****************************************************/
-/*pop_menu+-----------------------------------------+*/
+/*--------------------pop_menu------------------------*/
 .pop_menu div{
     float:left;
 }
@@ -209,7 +212,6 @@ html{
 .pop_menu_tail{
     background-image:url(../images/pop_menu_tail.png);
 }
-/*+---------------------------------------+  /pop_menu*/
 /********************************************************/
 /*+-----------------overwrite css----------------------+*/
 .top_func .first,
@@ -220,7 +222,6 @@ html{
 .nav .last{
     border-right:none;
 }
-/*+-----------------/overwrite css---------------------+*/
 /********************************************************/
 /* vim: fdm=marker
  */

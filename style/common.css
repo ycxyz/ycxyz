@@ -203,9 +203,15 @@ html{
     width: 980px;
     margin-left:auto;
     margin-right:auto;
+    padding-top:20px;
     text-align:center;
 }
+.footer_inner a{
+    color:#fff;
+    text-decoration:none;
+}
 .footer_inner p{
+    color:#fff;
     margin:10px;
 }
 /*****************************************************/

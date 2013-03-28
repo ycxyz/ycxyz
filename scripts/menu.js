@@ -8,7 +8,7 @@ $(document).ready(function(){
         },function(){
             $(this)
                 .find(".pop_menu")
-                .rmClass("mouse-in")
+                .removeClass("mouse-in")
                 .stop()
                 .fadeOut();
         });

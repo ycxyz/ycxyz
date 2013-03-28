@@ -194,6 +194,20 @@ html{
 .menu_item{
     z-index:99;
 }
+
+/*footer*/
+.footer{
+    background:red;
+}
+.footer_inner{
+    width: 980px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+.footer_inner p{
+    margin:10px;
+}
 /*****************************************************/
 /*--------------------pop_menu------------------------*/
 .pop_menu div{

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(".menu-item").each(function(){
+    $(".menu_item").each(function(){
         $(this).hover(function(){
             $(this)
                 .find(".pop_menu")

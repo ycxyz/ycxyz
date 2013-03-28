@@ -9,6 +9,9 @@
 .left_list_head{
     background-image:url(../images/.jpg);
 }
+.left_list_foot{
+    text-align:center;
+}
 .feed_item{
     border-bottom:1px solid red;
     padding-bottom:10px;

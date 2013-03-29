@@ -1,22 +1,24 @@
-$(document).ready(function(){
+;$(document).ready(function(){
+
     $(".menu_item").each(function(index){
+        var isOlderIe = $.browser.msie && (parseInt($.browser.version,10) < 9);
+        var speed = isOlderIe ? 0 : 500;
         $(this).hover(function(){
-            document.title = index;
             if( index > 4 ){
                 $(this).addClass("last_menu_item");
             }
             $(this)
                 .find(".pop_menu")
                 .addClass("mouse-in")
-                .stop().fadeIn(500,function(){
-                $(this).css({'opacity':1});
+                .stop().fadeIn(speed,function(){
+                    $(this).css({'opacity':1,'display':'block'});     // besure div show up.
                 });
         },function(){
             $(this)
                 .find(".pop_menu")
-                .removeClass("mouse-in","last_menu_item")
-                .stop()
-                .fadeOut();
+                .stop().fadeOut(speed/2)
+                .removeClass("mouse-in","last_menu_item");
         });
     });
+
 });

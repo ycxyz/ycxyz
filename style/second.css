@@ -47,6 +47,10 @@
     padding-top:20px;
     overflow:auto;
 }
+.feed_item:hover,
+.feed_item:focus{
+    background-color:#efefef;
+}
 .feed_title{
     height:30px;
     line-height:30px;

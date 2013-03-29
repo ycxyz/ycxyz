@@ -58,6 +58,7 @@ html{
     background: #ac0001;
     color: #fff;
     height: 35px;
+    box-shadow:0px -5px 10px #722 inset;
 }
 .top_inner {
     width: 980px;
@@ -117,8 +118,10 @@ html{
     margin-right:auto;
 }
 .content{
+    padding-bottom:20px;
     margin-top:30px;
     font-family:'宋体';
+    overflow:auto;
 }
 .header{
     height:100px;
@@ -248,6 +251,12 @@ html{
     margin-top:20px;
     background: #ac0001;
     padding:13px 0px;
+    box-shadow:0px 5px 10px #722 inset;
+}
+.footer_inner a:hover,
+.footer_inner a:focus{
+    font-weight:bold;
+    text-decoration:underline;
 }
 .footer_inner{
     width: 980px;
@@ -290,18 +299,19 @@ html{
 .page_index{
     text-align:center;
     padding-top:20px;
+    padding-bottom:20px;
 }
 .page_index a{
     color:#000;
     background:#ddd;
     text-decoration:none;
     padding:0px 5px;
-    border:1px solid #fee;
+    border:1px solid #ccf;
 }
 .page_index a:hover,
 .page_index a:focus{
     color:#00f;
-    background:#faa;
+    background:#aaf;
     border:1px solid #f66;
 }
 /*+-----------------overwrite css----------------------+*/

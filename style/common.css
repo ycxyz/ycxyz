@@ -84,6 +84,10 @@ html{
     color:white;
     text-decoration:none;
 }
+.top_func a:hover,
+.top_func a:focus{
+    text-decoration:underline;
+}
 .top_form{
     float:right;
 }
@@ -111,6 +115,10 @@ html{
     width: 980px;
     margin-left:auto;
     margin-right:auto;
+}
+.content{
+    margin-top:30px;
+    font-family:'宋体';
 }
 .header{
     height:100px;
@@ -185,25 +193,66 @@ html{
     -o-transition:all 0.3s;
     transition:all 0.3s;
 }
-.pop_menu{
+/*****************************************************/
+/*--------------------pop_menu------------------------*/
+.menu_item .pop_menu{
     position:absolute;
     left:0px;
     z-index:9999;
     display:none;
+    width:400px;
 }
-.menu_item{
-    z-index:99;
+.menu_item.last_menu_item .pop_menu{
+    right:0px !important;
+    left:auto;
 }
-
+.pop_menu div{
+    float:left;
+}
+.pop_menu a{
+    color:#fff;
+    display:inline-block;
+    padding:0px 5px;
+}
+.pop_menu a:hover,
+.pop_menu a:focus{
+    /*background-image:url(../images/pop_menu_hover.jpg);*/
+    /*background-repeat:repeat-x;*/
+    background:blue;
+}
+.pop_menu li{
+    float:left;
+    width:70px;
+    height:25px;
+    line-height:25px;
+    padding:5px 10px;
+}
+.pop_menu_head{
+    width:8px;
+    height:34px;
+    float:left;
+    background-image:url(../images/pop_menu_head.png);
+}
+.pop_menu_body{
+    background-image:url(../images/pop_menu_body.png);
+}
+.pop_menu_tail{
+    background-image:url(../images/pop_menu_tail.png);
+    background-position:right;
+    width:18px;
+    height:34px;
+}
+/********************************************************/
 /*footer*/
 .footer{
-    background:red;
+    margin-top:20px;
+    background: #ac0001;
+    padding:13px 0px;
 }
 .footer_inner{
     width: 980px;
     margin-left:auto;
     margin-right:auto;
-    padding-top:20px;
     text-align:center;
 }
 .footer_inner a{
@@ -214,25 +263,47 @@ html{
     color:#fff;
     margin:10px;
 }
-/*****************************************************/
-/*--------------------pop_menu------------------------*/
-.pop_menu div{
-    float:left;
+.list_box li{
+    line-height:20px;
+    padding-top:2px;
+    padding-left:5px;
 }
-.pop_menu li{
-    float:left;
-    width:100px;
-    padding:5px 10px;
+.list_box li a{
+    text-decoration:none;
 }
-.pop_menu_head{
-    width:8px;
-    height:34px;
-    background-image:url(../images/pop_menu_head.png);
+.list_box li a:hover{
+    text-decoration:underline;
 }
-.pop_menu_tail{
-    background-image:url(../images/pop_menu_tail.png);
+.box{
+    background-image:url(../images/box.jpg);
+    background-repeat:repeat-y;
 }
-/********************************************************/
+.box_title{
+    background-color:#ac0001;
+}
+.box_body_wrap{
+    background-image:url(../images/light.jpg);
+}
+.box .more{
+    color:#fff;
+}
+.page_index{
+    text-align:center;
+    padding-top:20px;
+}
+.page_index a{
+    color:#000;
+    background:#ddd;
+    text-decoration:none;
+    padding:0px 5px;
+    border:1px solid #fee;
+}
+.page_index a:hover,
+.page_index a:focus{
+    color:#00f;
+    background:#faa;
+    border:1px solid #f66;
+}
 /*+-----------------overwrite css----------------------+*/
 .top_func .first,
 .nav .first{

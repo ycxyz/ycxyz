@@ -1,6 +1,3 @@
-.content{
-    font-family:'宋体';
-}
 .left_list{
     width:680px;
     background:#fff;
@@ -10,7 +7,13 @@
     background-image:url(../images/.jpg);
 }
 .left_list_foot{
-    text-align:center;
+
+}
+.links{
+    margin-top:20px;
+}
+.links a{
+    float:left;
 }
 .feed_item{
     border-bottom:1px solid red;

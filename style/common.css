@@ -51,9 +51,6 @@ table {
 html{
     background:#efefef;
 }
-a:visited{
-    color:#556;
-}
 .clear{
     clear:both;
 }
@@ -133,6 +130,7 @@ a:visited{
 .nav{
     z-index:9999;
     position:relative;
+    height:49px;
 }
 .nav a{
     font-family:'黑体';
@@ -366,7 +364,7 @@ a:visited{
     background:#ac0001;
     color:white;
     opacity:0.5;
-    font-size:6px;
+    font-size:10px;
     position:absolute;
     top:-20px;
     left:-14px;

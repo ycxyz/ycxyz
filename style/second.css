@@ -6,10 +6,33 @@
     float:left;
 }
 .left_list_head{
-    background-image:url(../images/.jpg);
+    height:32px;
+    background-image:url(../images/list_head_bg.jpg);
+    background-repeat:repeat-x;
 }
-.left_list_foot{
-
+.current_topic{
+    display:inline-block;
+    width:136px;
+    height:31px;
+    background-image:url(../images/list_head.jpg);
+    background-repeat:no-repeat;
+    float:left;
+}
+.sub_topic{
+    background:;
+    display:inline-block;
+    height:31px;
+    line-height:31px;
+    color:#fff;
+    text-decoration:none;
+    float:left;
+    margin-right:10px;
+    padding:0px 10px;
+}
+.sub_topic.current_sub_topic{
+    background:#fff;
+    border-top:2px solid #ac0001;
+    color:#000;
 }
 .links{
     margin-top:20px;

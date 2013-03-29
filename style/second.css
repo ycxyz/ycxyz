@@ -1,9 +1,11 @@
 .left_list{
     width:680px;
     background:#fff;
-    border:1px solid #ffd;
+    border:1px solid #fcc;
     border-top:none;
+    border-radius:5px;
     float:left;
+    box-shadow:-1px 1px 10px -2px #333;
 }
 .left_list_head{
     height:32px;

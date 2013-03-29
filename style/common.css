@@ -293,6 +293,8 @@ html{
 }
 .box{
     font-size:12px;
+    border-radius:5px;
+    box-shadow:-1px 1px 10px -2px #333;
     background-color:#fff;
     background-image:url(../images/box.jpg);
     background-repeat:repeat-y;
@@ -325,8 +327,8 @@ html{
 }
 .page_index{
     text-align:center;
-    padding-top:20px;
-    padding-bottom:20px;
+    padding-top:30px;
+    padding-bottom:30px;
 }
 .page_index a{
     color:#ac0001;

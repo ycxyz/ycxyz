@@ -1,8 +1,8 @@
 .left_list{
-    width:660px;
+    width:680px;
     background:#fff;
-    border-left:1px solid #fdd;
-    border-right:1px solid #fdd;
+    border:1px solid #ffd;
+    border-top:none;
     float:left;
 }
 .left_list_head{
@@ -29,20 +29,20 @@
     line-height:30px;
 }
 .feed_title a{
-    color:red;
+    color:#ac0001;
     font-weight:bold;
     text-decoration:none;
 }
 .feed_title a:hover,
 .feed_title a:focus{
-    text-decoration:none;
+    text-decoration:underline;
 }
 .feed_image{
     float:left;
     width:150px;
 }
 .feed_digest{
-    font-size:14px;
+    font-size:12px;
     line-height:20px;
 }
 .feed_digest p{
@@ -56,7 +56,7 @@
     color:#888;
 }
 .feed_digest p a{
-    color:red;
+    color:#ac0001;
     text-decoration:none;
     margin-left:2px;
 }
@@ -64,6 +64,6 @@
     color:#888;
 }
 .right_side{
-    width:300px;
+    width:274px;
     float:right;
 }

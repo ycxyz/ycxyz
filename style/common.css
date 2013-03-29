@@ -131,6 +131,7 @@ a:visited{
     background:#f88;
 }
 .nav{
+    z-index:9999;
     position:relative;
 }
 .nav a{
@@ -204,9 +205,10 @@ a:visited{
 .menu_item .pop_menu{
     position:absolute;
     left:0px;
+    top:45px;
     z-index:9999;
     display:none;
-    width:400px;
+    width:450px;
 }
 .menu_item.last_menu_item .pop_menu{
     right:0px !important;
@@ -219,16 +221,11 @@ a:visited{
     color:#fff;
     display:inline-block;
     padding:0px 5px;
-}
-.pop_menu a:hover,
-.pop_menu a:focus{
-    /*background-image:url(../images/pop_menu_hover.jpg);*/
-    /*background-repeat:repeat-x;*/
-    background:blue;
+    text-shadow:0 -1px 0px #000;
 }
 .pop_menu li{
     float:left;
-    width:70px;
+    width:75px;
     height:25px;
     line-height:25px;
     padding:5px 10px;
@@ -247,6 +244,16 @@ a:visited{
     background-position:right;
     width:18px;
     height:34px;
+}
+.pop_menu .pop_menu_arrow{
+    display:inline-block;
+    width:11px;
+    height:11px;
+    position:absolute;
+    background-image:url(../images/arrow.png);
+    background-repeat:no-repeat;
+    left:50px;
+    top:0;
 }
 /********************************************************/
 /*footer*/
@@ -278,7 +285,7 @@ a:visited{
 .list_box li{
     line-height:25px;
     padding:5px 10px;
-    border-bottom:1px solid #a88;
+    border-bottom:1px solid #ac0001;
 }
 .list_box li a{
     text-decoration:none;
@@ -287,6 +294,7 @@ a:visited{
     text-decoration:underline;
 }
 .box{
+    font-size:12px;
     background-color:#fff;
     background-image:url(../images/box.jpg);
     background-repeat:repeat-y;
@@ -295,18 +303,24 @@ a:visited{
 .box_title{
     position:relative;
     background-color:#ac0001;
-    height:40px;
+    background-image:url(../images/box_title.jpg);
+    background-repeat:no-repeat;
+    height:47px;
 }
 .box .more{
     color:#fff;
     position:absolute;
     right:10px;
-    top:10px;
+    top:20px;
+    font-size:18px;
     text-shadow:0 -1px 0px #111;
     text-decoration:none;
 }
 .box_body{
     padding:20px 20px 15px;
+    background-image:url(../images/box_shine.jpg);
+    background-repeat:no-repeat;
+    background-position:0px 0px;
 }
 .box_body_wrap{
     background-image:url(../images/light.jpg);
@@ -317,7 +331,7 @@ a:visited{
     padding-bottom:20px;
 }
 .page_index a{
-    color:#000;
+    color:#ac0001;
     background:#f5f5f5;
     text-decoration:none;
     padding:2px 10px;
@@ -334,17 +348,41 @@ a:visited{
     color:#fff;
     background-color:#ac0001;
 }
+.page_index .current_page{
+    background:#fc5;
+    cursor:default;
+    position:relative;
+}
+.page_index .current_page::after{
+    display:none;
+}
+.page_index .current_page:hover::after{
+    display:inline-block;
+    content:"当前页面";
+    width:50px;
+    padding:2px;
+    border-radius:2px;
+    border:1px solid #900;
+    background:#ac0001;
+    color:white;
+    opacity:0.5;
+    font-size:6px;
+    position:absolute;
+    top:-20px;
+    left:-14px;
 }
 /*+-----------------overwrite css----------------------+*/
 .top_func .first,
 .nav .first,
 .list_box .first{
     border-left:none;
+    border-top:none;
 }
 .top_func .last,
 .nav .last,
 .list_box .last{
     border-right:none;
+    border-bottom:none;
 }
 /********************************************************/
 /* vim: fdm=marker

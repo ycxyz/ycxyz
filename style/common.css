@@ -51,6 +51,9 @@ table {
 html{
     background:#efefef;
 }
+a:visited{
+    color:#556;
+}
 .clear{
     clear:both;
 }
@@ -164,7 +167,7 @@ html{
     text-shadow:0 -1px 0px #111;
 }
 .nav a:visited{
-    color:#88a;
+    color:#ccf;
 }
 .nav .menu_item{
     float:left;
@@ -273,9 +276,9 @@ html{
     margin:10px;
 }
 .list_box li{
-    line-height:20px;
-    padding-top:2px;
-    padding-left:5px;
+    line-height:25px;
+    padding:5px 10px;
+    border-bottom:1px solid #a88;
 }
 .list_box li a{
     text-decoration:none;
@@ -284,17 +287,29 @@ html{
     text-decoration:underline;
 }
 .box{
+    background-color:#fff;
     background-image:url(../images/box.jpg);
     background-repeat:repeat-y;
+    margin-bottom:10px;
 }
 .box_title{
+    position:relative;
     background-color:#ac0001;
-}
-.box_body_wrap{
-    background-image:url(../images/light.jpg);
+    height:40px;
 }
 .box .more{
     color:#fff;
+    position:absolute;
+    right:10px;
+    top:10px;
+    text-shadow:0 -1px 0px #111;
+    text-decoration:none;
+}
+.box_body{
+    padding:20px 20px 15px;
+}
+.box_body_wrap{
+    background-image:url(../images/light.jpg);
 }
 .page_index{
     text-align:center;
@@ -303,24 +318,32 @@ html{
 }
 .page_index a{
     color:#000;
-    background:#ddd;
+    background:#f5f5f5;
     text-decoration:none;
-    padding:0px 5px;
-    border:1px solid #ccf;
+    padding:2px 10px;
+    border:1px solid #ddf;
+    border-radius:2px;
 }
 .page_index a:hover,
 .page_index a:focus{
-    color:#00f;
-    background:#aaf;
-    border:1px solid #f66;
+    color:#002;
+    background:#eef;
+    border:1px solid #ac0001;
+}
+.page_index a:active{
+    color:#fff;
+    background-color:#ac0001;
+}
 }
 /*+-----------------overwrite css----------------------+*/
 .top_func .first,
-.nav .first{
+.nav .first,
+.list_box .first{
     border-left:none;
 }
 .top_func .last,
-.nav .last{
+.nav .last,
+.list_box .last{
     border-right:none;
 }
 /********************************************************/

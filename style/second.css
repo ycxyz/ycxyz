@@ -1,6 +1,8 @@
 .left_list{
-    width:680px;
+    width:660px;
     background:#fff;
+    border-left:1px solid #fdd;
+    border-right:1px solid #fdd;
     float:left;
 }
 .left_list_head{
@@ -17,24 +19,41 @@
 }
 .feed_item{
     border-bottom:1px solid red;
-    padding-bottom:10px;
-    padding-left:30px;
+    padding-bottom:20px;
+    padding-left:20px;
     padding-top:20px;
     overflow:auto;
+}
+.feed_title{
+    height:30px;
+    line-height:30px;
 }
 .feed_title a{
     color:red;
     font-weight:bold;
+    text-decoration:none;
+}
+.feed_title a:hover,
+.feed_title a:focus{
+    text-decoration:none;
 }
 .feed_image{
     float:left;
     width:150px;
 }
 .feed_digest{
-    width:500px;
+    font-size:14px;
+    line-height:20px;
+}
+.feed_digest p{
+    width:470px;
     float:left;
     text-indent:2em;
     color:#555;
+}
+.feed_digest p.feed_info{
+    text-indent:0em;
+    color:#888;
 }
 .feed_digest p a{
     color:red;

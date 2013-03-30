@@ -58,6 +58,7 @@
 .feed_title{
     height:30px;
     line-height:30px;
+    clear:both;
 }
 .feed_title a{
     color:#ac0001;
@@ -97,4 +98,10 @@
 .right_side{
     width:274px;
     float:right;
+}
+.list_jar{
+    display:none;
+}
+.list_jar.current_jar{
+    display:block;
 }

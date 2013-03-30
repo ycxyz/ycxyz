@@ -124,12 +124,35 @@ html{
     overflow:auto;
 }
 .header{
-    height:100px;
-    background:#998;
+    height:90px;
+    position:relative;
 }
 .logo{
+    margin-top:60px;
+    width:270px;
     background-image:url(../images/logo.jpg);
     background-repeat:no-repeat;
+    border-right:1px solid #ac0001;
+    padding-right:30px;
+    position:relative;
+}
+.goal{
+    width:210px;
+    height:17px;
+    color:#ac0001;
+    font-size:20px;
+    text-indent:-3000em;
+    background-image:url(../images/goal.png) !important;
+    _background-image:url(../images/goal.gif);
+    background-repeat:no-repeat;
+    position:absolute;
+    right:-230px;
+    bottom:0px;
+}
+.weather{
+    position:absolute;
+    right:0px;
+    bottom:20px;
 }
 .nav{
     z-index:9999;
@@ -168,9 +191,6 @@ html{
     color:white;
     font-weight:bold;
     text-shadow:0 -1px 0px #111;
-}
-.nav a:visited{
-    color:#ccf;
 }
 .nav .menu_item{
     float:left;

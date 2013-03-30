@@ -125,7 +125,11 @@ html{
 }
 .header{
     height:100px;
-    background:#f88;
+    background:#998;
+}
+.logo{
+    background-image:url(../images/logo.jpg);
+    background-repeat:no-repeat;
 }
 .nav{
     z-index:9999;
@@ -250,21 +254,25 @@ html{
     position:absolute;
     background-image:url(../images/arrow.png);
     background-repeat:no-repeat;
-    left:50px;
+    left:60px;
     top:0;
+}
+.menu_item.last_menu_item .pop_menu .pop_menu_arrow{
+    right:60px;
+    left:auto;
 }
 /********************************************************/
 /*footer*/
 .footer{
     margin-top:20px;
     background: #ac0001;
+    text-shadow:0 -1px 0px #000;
     padding:13px 0px;
     box-shadow:0px 5px 10px #722 inset;
 }
 .footer_inner a:hover,
 .footer_inner a:focus{
     font-weight:bold;
-    text-decoration:underline;
 }
 .footer_inner{
     width: 980px;
@@ -334,9 +342,10 @@ html{
     color:#ac0001;
     background:#f5f5f5;
     text-decoration:none;
-    padding:2px 10px;
+    margin-right:10px;
+    padding:3px 11px;
     border:1px solid #ddf;
-    border-radius:2px;
+    border-radius:3px;
 }
 .page_index a:hover,
 .page_index a:focus{
@@ -347,6 +356,10 @@ html{
 .page_index a:active{
     color:#fff;
     background-color:#ac0001;
+    box-shadow:1px 1px 8px -3px #fff inset,
+               1px 1px 4px -1px #fff inset,
+               -1px -1px 4px -1px #444 inset,
+               0px 0px 10px 0px #333;
 }
 .page_index .current_page{
     background:#fc5;
@@ -354,22 +367,26 @@ html{
     position:relative;
 }
 .page_index .current_page::after{
-    display:none;
-}
-.page_index .current_page:hover::after{
     display:inline-block;
-    content:"当前页面";
-    width:50px;
     padding:2px;
-    border-radius:2px;
+    border-radius:3px;
     border:1px solid #900;
     background:#ac0001;
     color:white;
-    opacity:0.5;
+    opacity:0;
     font-size:10px;
-    position:absolute;
     top:-20px;
+    position:absolute;
+    transition:all 0.2s;
+    -webkit-transition:all 0.2s;
+}
+.page_index .current_page::after{
+    width:50px;
     left:-14px;
+}
+.page_index .current_page:hover::after{
+    opacity:0.5;
+    content:"当前页面";
 }
 /*+-----------------overwrite css----------------------+*/
 .top_func .first,

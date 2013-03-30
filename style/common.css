@@ -303,8 +303,10 @@ html{
     font-size:12px;
     border-radius:5px;
     background-color:#fff;
-    background-image:url(../images/box.jpg);
-    background-repeat:repeat-y;
+    padding-bottom:10px;
+    background-image:url(../images/box_btm.png);
+    background-position:center bottom;
+    background-repeat:no-repeat;
     margin-bottom:10px;
 }
 .box_title{
@@ -331,6 +333,15 @@ html{
 }
 .box_body_wrap{
     background-image:url(../images/light.jpg);
+}
+.box .wrapper_for_border{
+    padding-bottom:10px;
+    background-image:url(../images/box.jpg);
+    background-repeat:repeat-y;
+}
+.box.notif_box .box_body{
+    line-height:25px;
+    text-indent:2em;
 }
 .page_index{
     text-align:center;

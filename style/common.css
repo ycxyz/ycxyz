@@ -302,7 +302,6 @@ html{
 .box{
     font-size:12px;
     border-radius:5px;
-    box-shadow:-1px 1px 10px -2px #333;
     background-color:#fff;
     background-image:url(../images/box.jpg);
     background-repeat:repeat-y;
@@ -311,7 +310,7 @@ html{
 .box_title{
     position:relative;
     background-color:#ac0001;
-    background-image:url(../images/box_title.jpg);
+    background-image:url(../images/box_title.png);
     background-repeat:no-repeat;
     height:47px;
 }
@@ -326,7 +325,7 @@ html{
 }
 .box_body{
     padding:20px 20px 15px;
-    background-image:url(../images/box_shine.jpg);
+    background-image:url(../images/box_shine.png);
     background-repeat:no-repeat;
     background-position:0px 0px;
 }

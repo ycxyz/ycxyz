@@ -32,6 +32,10 @@
     margin-right:10px;
     padding:0px 10px;
 }
+.sub_topic:hover,
+.sub_topic:focus{
+    color:#ddd;
+}
 .sub_topic.current_sub_topic{
     background:#fff;
     border-top:2px solid #ac0001;

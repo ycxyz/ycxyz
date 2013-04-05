@@ -1,0 +1,41 @@
+#photo_con{
+    height:350px;
+    position:relative;
+}
+.foto{
+    position:absolute;
+    display:block;
+    height:100%;
+    width:100%;
+    background-repeat:no-repeat;
+}
+#foto_left{
+    width:759px;
+    height:311px;
+    z-index:1;
+    /*background-image:url(../images/photo_left.png);*/
+    background-position:left top;
+    left:0px;
+    top:0px;
+}
+#foto_right{
+    width:762px;
+    height:291px;
+    z-index:2;
+    /*background-image:url(../images/photo_right.png);*/
+    background-position:right top;
+    right:0px;
+    top:0px;
+}
+#foto_top{
+    width:902px;
+    height:303px;
+    z-index:3;
+    /*background-image:url(../images/photo_top.png);*/
+    background-position:center center;
+    left:40px;
+    bottom:30px;
+}
+.box_title{
+    background-image:none;
+}

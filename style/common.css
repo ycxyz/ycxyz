@@ -131,7 +131,6 @@ html{
 .logo{
     /*margin-top:60px;*/
     width:270px;
-    background-image:url(../images/logo.jpg);
     background-repeat:no-repeat;
     border-right:1px solid #ac0001;
     padding-right:30px;
@@ -352,9 +351,6 @@ html{
     background-image:url(../images/box_shine.png);
     background-repeat:no-repeat;
     background-position:0px 0px;
-}
-.box_body_wrap{
-    background-image:url(../images/light.jpg);
 }
 .box .wrapper_for_border{
     padding-bottom:10px;

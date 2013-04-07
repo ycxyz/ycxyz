@@ -284,6 +284,12 @@ html{
     right:60px;
     left:auto;
 }
+.links{
+    margin-top:20px;
+}
+.links a{
+    float:left;
+}
 /********************************************************/
 /*footer*/
 .footer{

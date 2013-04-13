@@ -56,6 +56,9 @@ html{
 .clear{
     clear:both;
 }
+.inset_type{
+    text-shadow:0 -1px 0px #000;
+}
 .top {
     background: #ac0001;
     color: #fff;
@@ -285,10 +288,41 @@ html{
     left:auto;
 }
 .links{
+    padding:10px 0px;
+    border-radius:5px;
+    -moz-box-shadow:    -1px 1px 10px -2px #333;
+    -ms-box-shadow:     -1px 1px 10px -2px #333;
+    -o-box-shadow:      -1px 1px 10px -2px #333;
+    -webkit-box-shadow: -1px 1px 10px -2px #333;
+    box-shadow:         -1px 1px 10px -2px #333;
+}
+.links legend{
+    padding:3px 9px;
+    background-color:#ac0001;
+    color:#fff;
+    position:relative;
+    left:20px;
+    border-radius:5px;
+    border:1px solid #511;
+    -moz-box-shadow:    -1px 1px 10px -2px #222;
+    -ms-box-shadow:     -1px 1px 10px -2px #222;
+    -o-box-shadow:      -1px 1px 10px -2px #222;
+    -webkit-box-shadow: -1px 1px 10px -2px #222;
+    box-shadow:         -1px 1px 10px -2px #222;
+    cursor:default;
+}
+.links{
     margin-top:20px;
 }
 .links a{
-    float:left;
+    display:inline-block;
+}
+.links a:hover,
+.links a:focus{
+    outline:1px solid #ac0001;
+}
+.links p{
+    text-align:center;
 }
 /********************************************************/
 /*footer*/

@@ -1,11 +1,11 @@
 (function(){
 
     var $slider = $("#slider");
-    var $item_width = $(".slider-item").width();
+    var $item_width = $(".slider_item").width();
     var $control = $("#slider_control");
     var $left = $("#slider_control_left");
     var $right = $("#slider_control_right");
-    var $size = $(".slider-item").size();
+    var $size = $(".slider_item").size();
     var $dots = ( new Array($size + 1) ).join( "<i></i>" );         // dots to insert into $control
     var sliderRoll;
     var MAGINLEFT = "margin-left";
@@ -17,7 +17,7 @@
 
         if( (num+1) < $size  ){
             $slider.animate({"margin-left":"-=" + $item_width +"px"},500,allUpdate);
-            console.log( "width",$item_width,$slider.css("margin-left"),'num',num,mgl );
+            //console.log( "width",$item_width,$slider.css("margin-left"),'num',num,mgl );
         } else {
             $slider.animate({"margin-left":"0px"},'fast',allUpdate);
         }
@@ -33,7 +33,7 @@
         if(direction == "left"){
             if( (num+1) < $size  ){
                 $slider.animate({"margin-left":"-=" + $item_width +"px"},500,allUpdate);
-                console.log( "width",$item_width,$slider.css("margin-left"),'num',num,mgl );
+                //console.log( "width",$item_width,$slider.css("margin-left"),'num',num,mgl );
             } else {
                 $slider.animate({"margin-left":"0px"},'fast',allUpdate);
             }
@@ -58,10 +58,10 @@
         var mgl = $slider.css("margin-left");
         mgl = parseInt( mgl, 10 );
         var num = - Math.round( mgl / $item_width );        // Math.abs
-        $(".slider-item:not(nth("+num+")) p").each(function(){
+        $(".slider_item:not(nth("+num+")) p").each(function(){
             $(this).css({ "bottom":- $(this).height() + "px" });
         });
-        $slider.find(".slider-item:nth("+num+") p").animate({"bottom":"0px"},function(){
+        $slider.find(".slider_item:nth("+num+") p").animate({"bottom":"0px"},function(){
         });
     }
 
@@ -69,7 +69,7 @@
     var start = function(){     // all initialize
         $control.html( $dots );             //  append dots
         $slider.width( $item_width * ( $size + 1 ) );        // set slider's with large enough to contain all sliders
-        $(".slider-item p").css({"bottom":-$(".slider-item p").height()+"px"});
+        $(".slider_item p").css({"bottom":-$(".slider_item p").height()+"px"});
         allUpdate();
     }
 

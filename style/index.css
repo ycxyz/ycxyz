@@ -1,6 +1,6 @@
 /*overwirte+------------------------------------------------------+*/
 .content{
-    margin-top:20px;
+    margin-top:10px;
 }
 .box .wrapper_for_border{
     padding-bottom:0px;
@@ -205,6 +205,15 @@
 .topic_before .scroll_item a{
     text-align:center;
 }
+/*board+------------------------------------------------------+*/
+.board{
+    background-image:url(../images/board.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    height:176px;
+    margin-top:10px;
+}
+/*+------------------------------------------------------+board*/
 /*+------------------------------------------------------+topic before*/
 .topic_list{
     width:777px;
@@ -293,6 +302,7 @@
     font-weight:bold;
     font-family:'宋体';
     text-align:center;
+    padding-top:5px;
 }
 .dailynews .bignews p{
     text-indent:2em;
@@ -405,4 +415,20 @@
     background-image:url(../images/topic_type.png);
     background-position:16px 11px;
 }
+.news_box.youandwe .topic_type{
+    background-position:16px -38px;
+}
+.news_box.road .topic_type{
+    background-position:16px -92px;
+}
+.news_box.innovate .topic_type{
+    background-position:16px -143px;
+}
+.news_box.deyu .topic_type{
+    background-position:16px -189px;
+}
+.news_box.openbook .topic_type{
+    background-position:16px -240px;
+}
+
 /*+------------------------------------------------------+topic type*/

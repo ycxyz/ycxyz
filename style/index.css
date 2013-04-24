@@ -155,11 +155,11 @@
 /*topic before+------------------------------------------------------+*/
 #scroller{
     position:relative;
-    height:340px;
+    height:420px;
     overflow:hidden;
 }
 .scroll_item{
-    height:160px;
+    height:140px;
 }
 #scroll_controler .up,
 #scroll_controler .down{
@@ -275,6 +275,7 @@
 }
 .dailynews .bignews a:hover{
     text-decoration:none;
+    cursor: pointer;
 }
 .dailynews .bignews a:hover h4,
 .dailynews .bignews a:hover span{

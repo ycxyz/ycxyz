@@ -124,6 +124,7 @@
 .side_boxs{
     width:193px;
     float:left;
+    margin-top:-16px;
 }
 .side_boxs .box_title{
     background-color:#fff;
@@ -131,13 +132,33 @@
     background-repeat:no-repeat;
     background-position:center bottom;
 }
-.side_boxs .box_type{
+.side_boxs .box_title{
+    height:65px;
+}
+.side_boxs .box{
+    padding-bottom:5px;
+    margin-bottom:0px;
+}
+.side_boxs .box .more{
+    top:auto;
+    bottom:15px;
+}
+.side_boxs .box .box_type{
     width:164px;
     height:60px;
     background-image:url(../images/box_title_type.png);
     _background-image:url(../images/box_title_type.gif);
     background-repeat:no-repeat;
-    background-position:10px 0px;
+    background-position:10px 16px;
+}
+.side_boxs .box.daily_english .box_type{
+    background-position:10px -62px;
+}
+.side_boxs .box.topic_before .box_type{
+    background-position:10px -124px;
+}
+.side_boxs .box.big_event .box_type{
+    background-position:10px -186px;
 }
 .side_boxs .box .box_body_wrap{
     background-image:url(../images/side_box_border.jpg);
@@ -154,28 +175,35 @@
 
 /*topic before+------------------------------------------------------+*/
 #scroller{
-    position:relative;
     height:420px;
     overflow:hidden;
 }
 .scroll_item{
     height:140px;
 }
-#scroll_controler .up,
-#scroll_controler .down{
+#topic_before .box_body{
+    padding-top:40px;
+    padding-bottom:30px;
+    position:relative;
+}
+#topic_before .up,
+#topic_before .down{
     display:inline-block;
-    width:100px;
-    height:50px;
+    width:90px;
+    height:36px;
     background:blue;
     position:absolute;
 }
-#scroll_controler .up{
+#topic_before .up{
     top:0px;
-    left:100px;
+    left:50px;
 }
-#scroll_controler .down{
+#topic_before .down{
     bottom:10px;
-    left:100px;
+    left:50px;
+}
+.topic_before .scroll_item a{
+    text-align:center;
 }
 /*+------------------------------------------------------+topic before*/
 .topic_list{
@@ -315,6 +343,7 @@
     right:10px;
     top:10px;
     text-shadow:none;
+    font-size:15px;
 }
 .box .clomun{
     float:left;

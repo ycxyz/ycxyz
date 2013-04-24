@@ -6,12 +6,12 @@
     var $up = $scroller.find(".up");
     var $down = $scroller.find(".down");
     var $animateHeight = $items.height();
-    var $upBtn = $("#scroll_controler .up");
-    var $downBtn = $("#scroll_controler .down");
+    var $upBtn = $("#topic_before .up");
+    var $downBtn = $("#topic_before .down");
     var flag = 0;
 
     var scrollUp = function(){
-        if( flag > $size - 3 ){
+        if( flag > $size - 4 ){     // number of showing up item plus 1
             $upBtn.fadeOut(function(){
                 $downBtn.fadeIn();
             });

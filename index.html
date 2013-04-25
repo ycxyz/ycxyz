@@ -21,10 +21,10 @@
     </head>
     <body>
         <div class="browser-alert">
-            <a href="#">you are using an old browser,we haven't supported it,please choose a morden one</a>
-            <a href="http://www.google.com.hk/chrome/intl/zh-CN/landing_chrome.html"><img src="./images/browser-cr.gif" title="chrome" /></a>
-            <a href="http://chrome.360.cn"><img src="./images/browser-360.gif" title="360jisu" /></a>
-            <a href="http://www.liebao.cn"><img src="./images/browser-lb.gif" title="liebao" /></a>
+            <a href="#">you are using an old browser,we haven't supported it,please choose a morden one☞</a>
+            <a class="browser" href="http://www.google.com.hk/chrome/intl/zh-CN/landing_chrome.html"><img src="./images/browser-cr.gif" title="chrome" /></a>
+            <a class="browser" href="http://chrome.360.cn"><img src="./images/browser-360.gif" title="360jisu" /></a>
+            <a class="browser" href="http://www.liebao.cn"><img src="./images/browser-lb.gif" title="liebao" /></a>
         </div>
         <div class="top">
             <div class="top_inner">
@@ -54,7 +54,7 @@
                     <span class="goal">以全新的面貌 提供更好的服务</span>
                 </div>
                 <div class="weather">
-<!--<iframe src="http://www.thinkpage.cn/weather/weather.aspx?uid=&cid=|C%EF%BD%88%EF%BD%81%EF%BD%8E%EF%BD%87sha&l=zh-CHS&p=TWC&a=0&u=C&s=1&m=0&x=0&d=3&fc=&bgc=&bc=&ti=1&in=1&li=2&ct=iframe" frameborder="0" scrolling="no" width="200" height="260" allowTransparency="true"></iframe>-->
+                    <iframe src="http://www.thinkpage.cn/weather/weather.aspx?uid=&cid=|C%EF%BD%88%EF%BD%81%EF%BD%8E%EF%BD%87sha&l=zh-CHS&p=TWC&a=0&u=C&s=1&m=0&x=0&d=3&fc=&bgc=&bc=&ti=1&in=1&li=2&ct=iframe" frameborder="0" scrolling="no" width="200" height="260" allowTransparency="true"></iframe>
                 </div>
             </div>
             <div class="nav">
@@ -663,18 +663,17 @@
             </div>
         </div>
         <script language="javascript" charset="utf-8">
-        $(".topic_type").bind("click",function(){
-            var $parent = $(this).parent().parent();
-            $parent.find(".box_body").slideToggle();
-        });
+            $(".topic_type").bind("click",function(){
+                var $parent = $(this).parent().parent();
+                $parent.find(".box_body").slideToggle();
+            });
         </script>
         <script src="scripts/slider.js" language="javascript" charset="utf-8"></script>
         <script src="scripts/scroll.js" language="javascript" charset="utf-8"></script>
         <script language="javascript" charset="utf-8">
             var $browser = jQuery.browser;
             var ver = parseInt( $browser.version ,10);
-            //if( $browser.msie && ver <= 7 ){
-            if( 1 ){
+            if( $browser.msie && ver <= 7 ){
                 $(".browser-alert").delay(500).slideDown(500,function(){
                     $(".browser")
                 });
@@ -684,7 +683,7 @@
 
                         setTimeout(function(){
                             var color = i % 2 ? "red" : "#ff0";
-                            $(".browser-alert").css({"background": color});
+                            $(".browser-alert").css({"backgroundColor": color});
                         },i * 500);
 
                     })(i);

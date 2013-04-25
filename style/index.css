@@ -215,6 +215,12 @@
     height:176px;
     margin-top:10px;
 }
+.board a{
+    display:inline-block;
+    height:100%;
+    width:100%;
+    text-align:center;
+}
 /*+------------------------------------------------------+board*/
 /*+------------------------------------------------------+topic before*/
 .topic_list{

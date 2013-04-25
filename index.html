@@ -21,12 +21,10 @@
     </head>
     <body>
         <div class="browser-alert">
-            <a href="#">please upgrade your browser</a>
-            <ul>
-                <li class="browser"></li>
-                <li class="browser"></li>
-                <li class="browser"></li>
-            </ul>
+            <a href="#">you are using an old browser,we haven't supported it,please choose a morden one</a>
+            <a href="http://www.google.com.hk/chrome/intl/zh-CN/landing_chrome.html"><img src="./images/browser-cr.gif" title="chrome" /></a>
+            <a href="http://chrome.360.cn"><img src="./images/browser-360.gif" title="360jisu" /></a>
+            <a href="http://www.liebao.cn"><img src="./images/browser-lb.gif" title="liebao" /></a>
         </div>
         <div class="top">
             <div class="top_inner">
@@ -674,10 +672,9 @@
         <script src="scripts/scroll.js" language="javascript" charset="utf-8"></script>
         <script language="javascript" charset="utf-8">
             var $browser = jQuery.browser;
-            var ver = $browser.version;
-            //if( $browser.msie && <= 6){
-            if( $browser.mise && ver <= 6 ){
-                alert("ie6");
+            var ver = parseInt( $browser.version ,10);
+            //if( $browser.msie && ver <= 7 ){
+            if( 1 ){
                 $(".browser-alert").delay(500).slideDown(500,function(){
                     $(".browser")
                 });

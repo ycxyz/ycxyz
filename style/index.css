@@ -480,12 +480,8 @@
    height:30px;
    width:30px;
    border-radius:30px;
-   background:blue;
-   float:left;
-}
-.browser-alert ul{
-    position:absolute;
-    left:100px;
-    top:-30px;
+   margin-top:5px;
+   padding-top:5px;
+   top:-30px;
 }
 /*+------------------------------------------------------+alert*/

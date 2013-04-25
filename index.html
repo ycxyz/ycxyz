@@ -21,10 +21,10 @@
     </head>
     <body>
         <div class="browser-alert">
-            <a href="#">you are using an old browser,we haven't supported it,please choose a morden one</a>
-            <a href="http://www.google.com.hk/chrome/intl/zh-CN/landing_chrome.html"><img src="./images/browser-cr.gif" title="chrome" /></a>
-            <a href="http://chrome.360.cn"><img src="./images/browser-360.gif" title="360jisu" /></a>
-            <a href="http://www.liebao.cn"><img src="./images/browser-lb.gif" title="liebao" /></a>
+            <a href="#">you are using an old browser,we haven't supported it,please choose a morden one☞</a>
+            <a class="browser" href="http://www.google.com.hk/chrome/intl/zh-CN/landing_chrome.html"><img src="./images/browser-cr.gif" title="chrome" /></a>
+            <a class="browser" href="http://chrome.360.cn"><img src="./images/browser-360.gif" title="360jisu" /></a>
+            <a class="browser" href="http://www.liebao.cn"><img src="./images/browser-lb.gif" title="liebao" /></a>
         </div>
         <div class="top">
             <div class="top_inner">
@@ -684,7 +684,7 @@
 
                         setTimeout(function(){
                             var color = i % 2 ? "red" : "#ff0";
-                            $(".browser-alert").css({"background": color});
+                            $(".browser-alert").css({"backgroundColor": color});
                         },i * 500);
 
                     })(i);

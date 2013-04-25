@@ -20,7 +20,7 @@
         $scroller.animate({"margin-top":"-=" + $animateHeight + "px"},500);
         flag += 1;
         $downBtn.fadeIn();
-        console.log( flag );
+        //console.log( flag );
     };
 
     var scrollDown = function(){
@@ -33,7 +33,7 @@
         $scroller.animate({"margin-top":"+=" + $animateHeight + "px"},500);
         $upBtn.fadeIn();
         flag -= 1;
-        console.log( flag );
+        //console.log( flag );
     };
 
     $upBtn.bind( "click",scrollUp );

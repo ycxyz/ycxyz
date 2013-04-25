@@ -158,7 +158,7 @@
     background-position:10px -124px;
 }
 .side_boxs .box.big_event .box_type{
-    background-position:10px -186px;
+    background-position:10px -203px;
 }
 .side_boxs .box .box_body_wrap{
     background-image:url(../images/side_box_border.jpg);
@@ -191,7 +191,8 @@
     display:inline-block;
     width:90px;
     height:36px;
-    background:blue;
+    background-image:url(../images/up_down.png);
+    _background-image:url(../images/up_down.gif);
     position:absolute;
 }
 #topic_before .up{
@@ -201,6 +202,7 @@
 #topic_before .down{
     bottom:10px;
     left:50px;
+    background-position:0px -30px;
 }
 .topic_before .scroll_item a{
     text-align:center;
@@ -218,8 +220,10 @@
 .topic_list{
     width:777px;
     float:left;
-    margin-left:10px;
+    margin-left:10px !important;
+    margin-left:5px;
     margin-top:7px;
+    overflow:hidden;
 }
 .box{
     background-image:url(../images/box.jpg);
@@ -357,7 +361,7 @@
 }
 .box .clomun{
     float:left;
-    width:50%;
+    width:376px;
 }
 .box .clomun .news_with_img{
     float:left;
@@ -399,6 +403,8 @@
     padding-bottom:0px;
 }
 .topic_box.box .box_body{
+    width:753px;
+    height:158px;
     background-image:url(../images/topic_box_btm.jpg);
     background-position:bottom center;
     padding:12px 12px 5px;

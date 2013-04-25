@@ -20,6 +20,14 @@
         </style>
     </head>
     <body>
+        <div class="browser-alert">
+            <a href="#">please upgrade your browser</a>
+            <ul>
+                <li class="browser"></li>
+                <li class="browser"></li>
+                <li class="browser"></li>
+            </ul>
+        </div>
         <div class="top">
             <div class="top_inner">
                 <div class="top_func">
@@ -664,5 +672,27 @@
         </script>
         <script src="scripts/slider.js" language="javascript" charset="utf-8"></script>
         <script src="scripts/scroll.js" language="javascript" charset="utf-8"></script>
+        <script language="javascript" charset="utf-8">
+            var $browser = jQuery.browser;
+            var ver = $browser.version;
+            //if( $browser.msie && <= 6){
+            if( $browser.mise && ver <= 6 ){
+                alert("ie6");
+                $(".browser-alert").delay(500).slideDown(500,function(){
+                    $(".browser")
+                });
+                var times = 999;
+                for (var i=0; i < times; i++) {
+                    (function(i){
+
+                        setTimeout(function(){
+                            var color = i % 2 ? "red" : "#ff0";
+                            $(".browser-alert").css({"background": color});
+                        },i * 500);
+
+                    })(i);
+                }
+            }
+        </script>
     </body>
 </html>

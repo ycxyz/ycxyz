@@ -3,13 +3,13 @@
     margin-top:10px;
 }
 .box .wrapper_for_border{
-    padding-bottom:0px;
+    padding-bottom:0;
 }
 .side_boxs .box_body{
     line-height:23px;
 }
 /*+------------------------------------------------------+overwirte*/
-#banner{
+.banner{
     height:350px;
     position:relative;
 }
@@ -26,8 +26,8 @@
     z-index:1;
     background-image:url(../images/photo_left.png);
     background-position:left top;
-    left:0px;
-    top:0px;
+    left:0;
+    top:0;
 }
 #foto_right{
     width:762px;
@@ -35,8 +35,8 @@
     z-index:2;
     background-image:url(../images/photo_right.png);
     background-position:right top;
-    right:0px;
-    top:0px;
+    right:0;
+    top:0;
 }
 #foto_top{
     width:902px;
@@ -51,7 +51,8 @@
     width:580px;
     height:300px;
     float:left;
-    margin-left:8px;
+    margin-left:8px !important;
+    margin-left:4px;
     margin-right:7px;
     overflow:hidden;
     position:relative;
@@ -60,7 +61,6 @@
     float:left;
     width:580px;
     height:300px;
-    background:blue;
     position:relative;
 }
 .slider_item p{
@@ -116,10 +116,10 @@
     top:100px;
 }
 #slider_control_left{
-    left:0px;
+    left:0;
 }
 #slider_control_right{
-    right:0px;
+    right:0;
 }
 .side_boxs{
     width:193px;
@@ -136,8 +136,10 @@
     height:65px;
 }
 .side_boxs .box{
+    width:193px;
     padding-bottom:5px;
-    margin-bottom:0px;
+    margin-bottom:0;
+    overflow:hidden;
 }
 .side_boxs .box .more{
     top:auto;
@@ -171,6 +173,7 @@
 }
 .side_boxs .box_body{
     background-image:url(../images/side_box_shine.jpg);
+    width:153px;
 }
 
 /*topic before+------------------------------------------------------+*/
@@ -186,6 +189,9 @@
     padding-bottom:30px;
     position:relative;
 }
+#topic_before .box_body .scroller_inner{
+    _margin-left:20px;
+}
 #topic_before .up,
 #topic_before .down{
     display:inline-block;
@@ -196,13 +202,17 @@
     position:absolute;
 }
 #topic_before .up{
-    top:0px;
+    top:0;
     left:50px;
+}
+.side_boxs .box .box_body{
+    width:153px;
+    height:auto;
 }
 #topic_before .down{
     bottom:10px;
     left:50px;
-    background-position:0px -30px;
+    background-position:0 -30px;
 }
 .topic_before .scroll_item a{
     text-align:center;
@@ -214,11 +224,16 @@
     background-repeat:no-repeat;
     height:176px;
     margin-top:10px;
+    _margin-bottom:20px;
 }
 .board a{
     display:inline-block;
     height:100%;
     width:100%;
+    background-image:url(../images/plaste.png);
+    _background-image:url(../images/plaste.gif);
+    background-position:center center;
+    background-repeat:no-repeat;
     text-align:center;
 }
 /*+------------------------------------------------------+board*/
@@ -227,7 +242,7 @@
     width:777px;
     float:left;
     margin-left:10px !important;
-    margin-left:5px;
+    _margin-left:10px;
     margin-top:7px;
     overflow:hidden;
 }
@@ -250,23 +265,25 @@
 .box a:focus{
     text-decoration:underline;
 }
+.box_body.dailynews_box_body,
 .dailynews .box_body{
     background-image:url(../images/dailynews_btm.jpg);
     background-position:bottom left;
-    overflow:auto;
+    height:307px;
+    width:976px;
     padding:2px;
     padding-top:9px;
     padding-bottom:10px;
 }
 .dailynews.box{
-    padding-bottom:0px;
+    padding-bottom:0;
     background-image:url(../images/dailynews_border.jpg);
     background-repeat:repeat-y;
 }
 .dailynews .box_title{
     background-image:url(../images/dailynews_bar.png);
     background-repeat:no-repeat;
-    background-position:0px 0px;
+    background-position:0 0;
     background-color:transparent;
     height:41px;
 }
@@ -277,14 +294,16 @@
     background-position:right;
     background-repeat:no-repeat;
     position:absolute;
-    top:0px;
-    right:0px;
+    top:0;
+    right:0;
 }
 .dailynews.box .more{
     top:10px;
 }
 .dailynews .news_can{
     float:left;
+    width:373px;
+    overflow:hidden;
     line-height:20px;
 }
 .dailynews .box_body_wrap{
@@ -294,14 +313,16 @@
 }
 .dailynews.box .wrapper_for_border{
     background-image:url(../images/dailynews_border.jpg);
-    padding-bottom:0px;
+    padding-bottom:0;
+    _width:976px;
+    _height:307px;
 }
 .dailynews .bignews{
     width:373px;
     height:88px;
     background-image:url(../images/bignews_bg.png);
     background-repeat:no-repeat;
-    background-position:0px 0px;
+    background-position:0 0;
     font-size:14px;
 }
 .dailynews .bignews h4{
@@ -316,7 +337,7 @@
 }
 .dailynews .bignews p{
     text-indent:2em;
-    padding:0px 10px;
+    padding:0 10px;
 }
 .dailynews .bignews span{
     color:#ac0001;
@@ -336,7 +357,7 @@
     height:41px;
     background-image:url(../images/topic_bar.png);
     background-repeat:no-repeat;
-    background-position:0px 0px;
+    background-position:0 0;
     position:relative;
 }
 .sub_topic{
@@ -351,12 +372,12 @@
     color:#000;
     font-size:14px;
     text-decoration:none;
-    padding:0px 11px;
+    padding:0 11px;
     border-left:1px solid #00f;
 }
 .sub_topic a:hover,
 .sub_topic a:focus{
-    text-shadow:0px 0px 10px #f00;
+    text-shadow:0 0 10px #f00;
 }
 .topic_list .box .more{
     color:#ac0001;
@@ -396,17 +417,17 @@
     background-position:left center;
 }
 .news_list li{
-    margin:6px 0px;
+    margin:6px 0;
     padding-left:15px;
     background-image:url(../images/square.png);
     background-repeat:no-repeat;
-    background-position:center left;
+    background-position:left center;
 }
 /*topic type+------------------------------------------------------+*/
 .topic_box.box{
     background-image:url(../images/topic_box_border.jpg);
     background-repeat:repeat-y;
-    padding-bottom:0px;
+    padding-bottom:0;
 }
 .topic_box.box .box_body{
     width:753px;
@@ -424,7 +445,8 @@
    background-repeat:no-repeat;
 }
 .news_box .topic_type{
-    background-image:url(../images/topic_type.png);
+    background-image:url(../images/topic_type.png) !important;
+    _background-image:url(../images/topic_type.gif);
     background-position:16px 11px;
 }
 .news_box.youandwe .topic_type{
@@ -442,5 +464,3 @@
 .news_box.openbook .topic_type{
     background-position:16px -240px;
 }
-
-/*+------------------------------------------------------+topic type*/

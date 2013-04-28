@@ -670,25 +670,6 @@
         </script>
         <script src="scripts/slider.js" language="javascript" charset="utf-8"></script>
         <script src="scripts/scroll.js" language="javascript" charset="utf-8"></script>
-        <script language="javascript" charset="utf-8">
-            var $browser = jQuery.browser;
-            var ver = parseInt( $browser.version ,10);
-            if( $browser.msie && ver <= 7 ){
-                $(".browser-alert").delay(500).slideDown(500,function(){
-                    $(".browser")
-                });
-                var times = 999;
-                for (var i=0; i < times; i++) {
-                    (function(i){
-
-                        setTimeout(function(){
-                            var color = i % 2 ? "red" : "#ff0";
-                            $(".browser-alert").css({"backgroundColor": color});
-                        },i * 500);
-
-                    })(i);
-                }
-            }
-        </script>
+        <script src="scripts/alert.js" language="javascript" charset="utf-8"></script>
     </body>
 </html>

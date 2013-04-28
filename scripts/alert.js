@@ -1,21 +1,21 @@
+// alert for ie 6
+// if version of ie is lower than 6
+// show the alert div
 var $browser = jQuery.browser;
-var ver = parseInt( $browser.version );
-if( !$browser.mise ){
+var ver = parseInt( $browser.version ,10);
+if( $browser.msie && ver <= 7 ){
     $(".browser-alert").delay(500).slideDown(500,function(){
-        $(".browser").each(function( index ){
-            console.log( index );
-            $(this).animate({"top":0},500);
-        });
+        $(".browser")
     });
-    var times = 200;
+    var times = 999;
     for (var i=0; i < times; i++) {
         (function(i){
 
-         setTimeout(function(){
-             var color = i % 2 ? "red" : "yellow";
-             $(".browser-alert").css({"background": color});
-             },i * 300);
+            setTimeout(function(){
+                var color = i % 2 ? "red" : "#ff0";
+                $(".browser-alert").css({"backgroundColor": color});
+            },i * 500);
 
-         })(i);
+        })(i);
     }
 }

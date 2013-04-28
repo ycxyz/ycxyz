@@ -464,24 +464,3 @@
 .news_box.openbook .topic_type{
     background-position:16px -240px;
 }
-/*alert+------------------------------------------------------+*/
-.browser-alert{
-    width:100%;
-    position: fixed;
-    background:yellow;
-    text-align:center;
-    height:40px;
-    line-height:40px;
-    font-size:25px;
-    display: none;
-    z-index:99999;
-}
-.browser{
-   height:30px;
-   width:30px;
-   border-radius:30px;
-   margin-top:5px;
-   padding-top:5px;
-   top:-30px;
-}
-/*+------------------------------------------------------+alert*/

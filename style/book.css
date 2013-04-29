@@ -306,7 +306,7 @@ html{
     margin-left:auto;
     margin-right:auto;
     text-align:center;
-} 
+}
 .footer_inner a{
     color:#fff;
     text-decoration:none;
@@ -530,7 +530,7 @@ clear: both;
     margin: 40px 0 20px 0;
 }
 .humors{
-    
+
 }
 .humor_top{
     background: url(../images/humors_top.png) no-repeat;
@@ -587,9 +587,6 @@ clear: both;
 .humor_left_right{
     float: left;
     margin: 5px 0 0 20px;
-<<<<<<< HEAD
-}
-=======
 }
 /*addition+------------------------------------------------------+*/
 .bookshow{
@@ -639,4 +636,3 @@ clear: both;
     background:yellow;
 }
 /*+------------------------------------------------------+addition*/
->>>>>>> bfeba15... update: book list

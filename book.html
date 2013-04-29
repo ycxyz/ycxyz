@@ -36,7 +36,7 @@
                     <span class="goal">以全新的面貌 提供更好的服务</span>
                 </div>
                 <div class="weather">
-<iframe src="http://www.thinkpage.cn/weather/weather.aspx?uid=&cid=|C%EF%BD%88%EF%BD%81%EF%BD%8E%EF%BD%87sha&l=zh-CHS&p=TWC&a=0&u=C&s=1&m=0&x=0&d=3&fc=&bgc=&bc=&ti=1&in=1&li=2&ct=iframe" frameborder="0" scrolling="no" width="200" height="260" allowTransparency="true"></iframe>
+                    <!--<iframe src="http://www.thinkpage.cn/weather/weather.aspx?uid=&cid=|C%EF%BD%88%EF%BD%81%EF%BD%8E%EF%BD%87sha&l=zh-CHS&p=TWC&a=0&u=C&s=1&m=0&x=0&d=3&fc=&bgc=&bc=&ti=1&in=1&li=2&ct=iframe" frameborder="0" scrolling="no" width="200" height="260" allowTransparency="true"></iframe>-->
                 </div>
             </div>
             <div class="nav">
@@ -145,7 +145,37 @@
                 <div class="nav_fix nav_tail"></div>
             </div>
             <div class="clear"></div>
-            <div class="bookshow"></div>
+            <div class="bookshow">
+                <div class="book-wrapper">
+                    <div class="book-list" id="book-list">
+                        <ul>
+                            <li><a href="#"><image src="images/book/book-item.jpg"></image></a></li>
+                            <li><a href="#"><image src="images/book/book-item.jpg"></image></a></li>
+                            <li><a href="#"><image src="images/book/book-item.jpg"></image></a></li>
+                            <li><a href="#"><image src="images/book/book-item.jpg"></image></a></li>
+                            <li><a href="#"><image src="images/book/book-item.jpg"></image></a></li>
+                            <li><a href="#"><image src="images/book/book-item.jpg"></image></a></li>
+                            <li><a href="#"><image src="images/book/book-item.jpg"></image></a></li>
+                            <li><a href="#"><image src="images/book/book-item.jpg"></image></a></li>
+                            <li><a href="#"><image src="images/book/book-item.jpg"></image></a></li>
+                            <li><a href="#"><image src="images/book/book-item.jpg"></image></a></li>
+                            <li><a href="#"><image src="images/book/book-item.jpg"></image></a></li>
+
+                            <li><a href="#"><image src="images/book/book-item.jpg"></image></a></li>
+                            <li><a href="#"><image src="images/book/book-item.jpg"></image></a></li>
+                            <li><a href="#"><image src="images/book/book-item.jpg"></image></a></li>
+                            <li><a href="#"><image src="images/book/book-item.jpg"></image></a></li>
+                            <li><a href="#"><image src="images/book/book-item.jpg"></image></a></li>
+                            <li><a href="#"><image src="images/book/book-item.jpg"></image></a></li>
+                            <li><a href="#"><image src="images/book/book-item.jpg"></image></a></li>
+                            <li><a href="#"><image src="images/book/book-item.jpg"></image></a></li>
+                            <li><a href="#"><image src="images/book/book-item.jpg"></image></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <i class="book-control left" title="☜">left</i>
+                <i class="book-control right" title="☞">right</i>
+            </div>
             <div class="sort">
                 <div class="famous_1">
                     <div class="famous_w">
@@ -256,7 +286,7 @@
                         <a href="#" class="sub_topic ">名家雅座</a>
                         <a href="#" class="sub_topic">时尚视野</a>
                     </div>
-                    <div class="clear"></div> 
+                    <div class="clear"></div>
                     <div class="list_jar   current_jar">
                         <div class="list_line">
                             <a href="#">北辰发的台式</a>
@@ -477,7 +507,7 @@
              </div>
              <div class="humous">
               <a href="#"><img src="images/humous.png"></a>
-              </div> 
+              </div>
               <div class="humors">
                   <div class="humor_top"></div>
                   <div class="humor_left">
@@ -663,7 +693,7 @@
                       </div>
                       <div class="humor_left_right"><a href="#"><img height=313px width=465px src="images/flower.png"></a></div>
                   </div>
-              </div>          
+              </div>
 <div class="clear"></div>
             <div class="links">
                 <a href="#"><img src="images/link_1.jpg" alt="友情链接" width="80px;" height="30px" title="友情链接" /></a>
@@ -694,17 +724,6 @@
                 <p>联系地址：中南大学本部升华前楼204 联系电话：0731-88836377 备案号：湘ICP备120035642</p>
             </div>
         </div>
-        <script language="javascript" charset="utf-8">
-            $(".sub_topic").each(function(index){
-                var _index = index;
-                $(this).bind("click",function(){
-                    var $this = $(this);
-                    $this.siblings(".sub_topic").removeClass("current_sub_topic");      // all hidden
-                    $this.addClass("current_sub_topic");        // show
-                    $(".list_jar").removeClass("current_jar");
-                    $(".list_jar:nth("+_index+")").addClass("current_jar");
-                });
-            });
-        </script>
+        <script src="scripts/book-slide.js" language="javascript" charset="utf-8"></script>
     </body>
 </html>

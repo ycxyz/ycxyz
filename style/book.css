@@ -131,7 +131,7 @@ html{
 .logo{
     /*margin-top:60px;*/
     width:270px;
-    background-image:url(../images/logo.jpg);
+    /*background-image:url(../images/logo.jpg);*/
     background-repeat:no-repeat;
     border-right:1px solid #ac0001;
     padding-right:30px;
@@ -587,4 +587,50 @@ clear: both;
 .humor_left_right{
     float: left;
     margin: 5px 0 0 20px;
+<<<<<<< HEAD
 }
+=======
+}
+/*addition+------------------------------------------------------+*/
+.bookshow{
+    /*background-image:url(../images/book/desk.png) !important;*/
+    /*background-image:url(../images/book/desk.gif);*/
+}
+.book-control{
+}
+.book-control.disabled{
+    color:yellow;
+    font-size:18px;
+}
+.book-wrapper{
+    width:900px;
+    height:400px;
+    margin:0 auto;
+    overflow:hidden;
+}
+.book-list{
+    overflow:auto;
+    height:300px;
+    border:1px solid blue;
+}
+.book-list ul{
+    height:300px;
+}
+.book-list li{
+    float: left;
+    width:123px;
+    margin-left:28px;
+    margin-right:29px;
+}
+.book-list li img{
+    display:inline-block;
+    width:123px;
+    height:184px;
+    background-image:url(../images/book/book-bg.png) !important;
+    background-image:url(../images/book/book-bg.gif);
+    background-repeat:no-repeat;
+    padding-top:5px;
+    padding-bottom:18px;
+}
+/*+------------------------------------------------------+addition*/
+>>>>>>> bfeba15... update: book list

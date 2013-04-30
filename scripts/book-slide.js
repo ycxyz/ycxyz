@@ -16,23 +16,25 @@ $(document).ready(function(){
     var itemWidth = 180;
     var $stepWidth = itemWidth * numoOfShow;        // animate width
     var size = $bookItem.size();            // size fo book items
-    var flag = 0;           // flag to store animate status
+    var counter = 0;           // counter to store animate status
 
     $list.css({"width": ( size + 1 ) * itemWidth + "px"});
 
     var updateAll = function(){
         var updateIndex = function(){       // update current index
             $(".index").removeClass("current",function(){
-                $(".index:nth-child("+flag+")").toggleClass("current");
+                $(".index:nth-child("+counter+")").toggleClass("current");
             });
         };
         var updateArrow = function(){
-            if( flag <= 0 ){
+            if( counter <= 0 ){
                 controls.removeClass("disabled")
                 $rightBtn.addClass("disabled");
-            } else if( flag >= ( size / numoOfShow - 1 ) ){
+            } else if( counter >= ( size / numoOfShow - 1 ) ){
                 controls.removeClass("disabled");
                 $leftBtn.addClass("disabled");
+            } else {
+                controls.removeClass("disabled");
             }
         };
 
@@ -50,28 +52,30 @@ $(document).ready(function(){
 
     var moveToLeft = function(){            // animate to left
         console.log( 'move to left func' );
-        if (flag >= ( size / numoOfShow - 1 ) ) return;
+        if (counter >= ( size / numoOfShow - 1 ) ) return;
 
-        ++ flag;
+        ++ counter;
         $list.animate({"margin-left": "-=" + $stepWidth + "px"},speed,function(){
             updateAll();
-            console.log( "flag",flag,'stepWidth',$stepWidth );
+            console.log( "counter",counter,'stepWidth',$stepWidth );
         });
     };
 
     var moveToRight = function(){           // animate to right
         console.log( 'move to right func' );
-        if (flag <= 0) return;
+        if (counter <= 0) return;
 
-        -- flag;
+        -- counter;
         $list.animate({"margin-left": "+=" + $stepWidth + "px"},speed,function(){
             updateAll();
         });
     };
 
     var $slideTimer = setInterval( function(){
-        if( flag >= (size / numoOfShow - 1) ){
-            moveToRight();
+        if( counter >= (size / numoOfShow - 1) ){
+            counter = 0;
+            $list.animate({"margin-left":0}, speed * 2, updateAll);
+            return;
         }
         moveToLeft();
     }, timePause );         // set interval timer
@@ -86,4 +90,13 @@ $(document).ready(function(){
     $leftBtn.bind("click", moveToLeft);
     $rightBtn.bind("click", moveToRight);
 
+
 });
+
+// cover flip
+
+//$(document).ready(function(){
+    //$(".book-list li a").bind("click",function(){
+        //$(this).find("div").toggleClass("flip-cover");
+    //})
+//});

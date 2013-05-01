@@ -333,10 +333,6 @@ html{
     padding:13px 0px;
     box-shadow:0px 5px 10px -2px #722 inset;
 }
-.footer_inner a:hover,
-.footer_inner a:focus{
-    font-weight:bold;
-}
 .footer_inner{
     width: 980px;
     margin-left:auto;
@@ -344,12 +340,18 @@ html{
     text-align:center;
 }
 .footer_inner a{
+    display:inline-block;
+    width:80px;
     color:#fff;
     text-decoration:none;
 }
 .footer_inner p{
     color:#fff;
     margin:10px;
+}
+.footer_inner a:hover,
+.footer_inner a:focus{
+    font-weight:bold;
 }
 .list_box li{
     line-height:22px;

@@ -3,7 +3,7 @@ $(document).ready(function(){
     var $wrapper = $("#book-wrapper");        // wrapper
     var $list = $("#book-list");
 
-    var controls = $(".book-control");
+    var $control = $(".book-control");
     var $leftBtn = $(".book-control.left");   // will be bound with moveToLeft
     var $rightBtn = $(".book-control.right"); // will be bound with moveToRight
 
@@ -12,7 +12,7 @@ $(document).ready(function(){
     var numoOfShow = 5;                       // number of books show up
     var speed = 1000;                         // animate speed
     var timePause = speed * 20;               // pause of slide
-    var itemWidth = 180;
+    var itemWidth = 178;                      // 123 + 27 + 28 = 178
     var $stepWidth = itemWidth * numoOfShow;  // animate width
     var size = $bookItem.size();              // size fo book items
     var counter = 0;                          // counter to store animate status
@@ -26,13 +26,13 @@ $(document).ready(function(){
 
         var updateArrow = function(){       // show or hide Arrow
             if( counter <= 0 ){
-                controls.removeClass("disabled")
+                $control.removeClass("disabled")
                 $rightBtn.addClass("disabled");
             } else if( counter >= ( size / numoOfShow - 1 ) ){
-                controls.removeClass("disabled");
+                $control.removeClass("disabled");
                 $leftBtn.addClass("disabled");
             } else {
-                controls.removeClass("disabled");
+                $control.removeClass("disabled");
             }
         };
 
@@ -43,7 +43,6 @@ $(document).ready(function(){
     var $move = function( direct,callback ){         // direct: use "-=" will moveToLeft
                                                     // "+=" will moveToRight
         $list.animate({"margin-left": direct + $stepWidth + "px"}, speed, function(){
-            console.log('updating');
             updateAll();
             if (callback) callback();
 

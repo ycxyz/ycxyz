@@ -632,5 +632,11 @@ clear: both;
     padding-top:5px;
     padding-bottom:18px;
 }
+.index-con{
+    background:blue;
+}
+.index.current{
+    background:yellow;
+}
 /*+------------------------------------------------------+addition*/
 >>>>>>> bfeba15... update: book list

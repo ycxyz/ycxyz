@@ -52,7 +52,10 @@ $(document).ready(function(){
 
     var moveToLeft = function(){            // animate to left
         console.log( 'move to left func' );
-        if (counter >= ( size / numoOfShow - 1 ) ) return;
+        if (counter >= ( size / numoOfShow - 1 ) ){
+            updateAll();
+            return;
+        }
 
         ++ counter;
         $list.animate({"margin-left": "-=" + $stepWidth + "px"},speed,function(){
@@ -63,7 +66,10 @@ $(document).ready(function(){
 
     var moveToRight = function(){           // animate to right
         console.log( 'move to right func' );
-        if (counter <= 0) return;
+        if (counter <= 0){
+            updateAll();
+            return;
+        }
 
         -- counter;
         $list.animate({"margin-left": "+=" + $stepWidth + "px"},speed,function(){

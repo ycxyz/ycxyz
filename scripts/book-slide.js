@@ -8,7 +8,7 @@ $(document).ready(function(){
     var $rightBtn = $(".book-control.right");       // will bind with moveToRight func
 
     var $bookItem = $list.find("li");
-    console.log( $bookItem,"log width", $bookItem.outerWidth() );
+    //console.log( $bookItem,"log width", $bookItem.outerWidth() );
 
     var numoOfShow = 5;     // number of booked show up
     var speed = 500;        // animate speed
@@ -51,7 +51,7 @@ $(document).ready(function(){
     };
 
     var moveToLeft = function(){            // animate to left
-        console.log( 'move to left func' );
+        //console.log( 'move to left func' );
         if (counter >= ( size / numoOfShow - 1 ) ){
             updateAll();
             return;
@@ -60,12 +60,12 @@ $(document).ready(function(){
         ++ counter;
         $list.animate({"margin-left": "-=" + $stepWidth + "px"},speed,function(){
             updateAll();
-            console.log( "counter",counter,'stepWidth',$stepWidth );
+            //console.log( "counter",counter,'stepWidth',$stepWidth );
         });
     };
 
     var moveToRight = function(){           // animate to right
-        console.log( 'move to right func' );
+        //console.log( 'move to right func' );
         if (counter <= 0){
             updateAll();
             return;

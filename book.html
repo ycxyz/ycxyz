@@ -5,9 +5,13 @@
         <title>中国研究生创新园</title>
         <link rel="stylesheet" href="style/common.css" type="text/css" media="screen" title="no title" charset="utf-8">
         <link rel="stylesheet" href="style/book.css" type="text/css" media="screen" title="no title" charset="utf-8">
+
         <script src="scripts/jquery.js" language="javascript" charset="utf-8"></script>
-        <script src="scripts/jquery.scrollTo.js" language="javascript" charset="utf-8"></script>
         <script src="scripts/menu.js" language="javascript" charset="utf-8"></script>
+        <script src="scripts/jquery.scrollTo.js" language="javascript" charset="utf-8"></script>
+
+        <script src="scripts/jquery-ui-1.10.2.custom.js" language="javascript" charset="utf-8"></script>
+        <link rel="stylesheet" href="style/jquery-ui-1.10.2.custom.css" type="text/css" media="screen" charset="utf-8">
     </head>
     <body>
         <div class="top">
@@ -524,8 +528,8 @@
                  </div>
                  <div class="walk_right">
                      <div class="walk_right_1">
-                         <!-- <iframe src="http://www.nongli.com/item3/" frameborder="0" scrolling="no" width="200" height="260" allowTransparency="true"></iframe> -->
-                         </div>
+                         <div id="calendar" class="calendar"></div>
+                     </div>
                      <div class="walk_right_2"></div>
                  </div>
              </div>
@@ -754,5 +758,8 @@
         </div>
         <script src="scripts/book-slide.js" language="javascript" charset="utf-8"></script>
         <script src="scripts/list-switch.js" language="javascript" charset="utf-8"></script>
+        <script language="javascript" charset="utf-8">
+            $("#calendar").datepicker()
+        </script>
     </body>
 </html>

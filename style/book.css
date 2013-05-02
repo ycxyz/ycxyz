@@ -416,11 +416,9 @@ float: left;
 }
 .walk_right{
     float: right;
-    position: relative;
-    top: -50px;
 }
 .walk_right_1{
-    height: 360px;
+    height: 320px;
     width: 220px;
     border:1px solid red;
 }

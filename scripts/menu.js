@@ -16,7 +16,7 @@
         },function(){
             $(this)
                 .find(".pop_menu")
-                .stop().delay(100).fadeOut(speed/2)
+                .delay(150).stop().fadeOut(speed/2)
                 .removeClass("mouse-in","last_menu_item");
         });
     });

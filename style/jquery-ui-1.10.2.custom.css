@@ -145,27 +145,23 @@
     display:none;
 }
 .ui-datepicker table {
-	width: 100%;
+    width:170px;
 	font-size: .9em;
 	border-collapse: collapse;
-	margin: 0 0 .4em;
+    margin:35px auto 0px;
+}
+.ui-datepicker table tbody{
+    margin-top:5px;
 }
 .ui-datepicker th {
-	padding: .7em .3em;
+	padding: 1px 1px;
 	text-align: center;
 	font-weight: bold;
 	border: 0;
+    color:#900;
 }
 .ui-datepicker td {
 	border: 0;
-	padding: 1px;
-}
-.ui-datepicker td span,
-.ui-datepicker td a {
-	display: block;
-	padding: .2em;
-	text-align: right;
-	text-decoration: none;
 }
 .ui-datepicker .ui-datepicker-buttonpane {
 	background-image: none;
@@ -273,15 +269,12 @@
 	font-size: 1em;
 }
 .ui-widget-content {
-	border: 1px solid #dddddd;
 	color: #333333;
 }
 .ui-widget-content a {
 	color: #333333;
 }
 .ui-widget-header {
-	border: 1px solid #e78f08;
-	background: #f6a828;
 	color: #ffffff;
 	font-weight: bold;
 }
@@ -294,8 +287,7 @@
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
-	font-weight: bold;
-	color: #1c94c4;
+	color: #b00;
 }
 .ui-state-default a,
 .ui-state-default a:link,
@@ -322,7 +314,6 @@
 .ui-state-active,
 .ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active {
-	background: #ffffff ;
 	font-weight: bold;
 	color: #eb8f00;
 }
@@ -338,7 +329,6 @@
 .ui-state-highlight,
 .ui-widget-content .ui-state-highlight,
 .ui-widget-header .ui-state-highlight {
-	border: 1px solid #fed22f;
 	color: #363636;
 }
 .ui-state-highlight a,
@@ -349,7 +339,6 @@
 .ui-state-error,
 .ui-widget-content .ui-state-error,
 .ui-widget-header .ui-state-error {
-	border: 1px solid #cd0a0a;
 	color: #ffffff;
 }
 .ui-state-error a,
@@ -613,4 +602,24 @@
 	opacity: .2;
 	filter: Alpha(Opacity=20);
 	border-radius: 5px;
+}
+.ui-datepicker td span,
+.ui-datepicker td a {
+	display: block;
+	padding: 1px;
+	text-align: right;
+	text-decoration: none;
+    color:#900;
+}
+/*My overlays*/
+.ui-datepicker table thead{
+    border-top:2px solid #333;
+    padding-top:3px;
+}
+.ui-datepicker table tbody{
+    margin-top:5px;
+    border-top:1px solid #f0f;
+}
+.ui-datepicker table tbody tr{
+    border-bottom:2px solid #fff;
 }

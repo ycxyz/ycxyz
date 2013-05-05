@@ -51,8 +51,8 @@ body { background: url(../images/bg.gif) repeat-x #fff; }
 .pic_wrap ul { position: absolute; left: 0; top: 0; }
 .pic_wrap ul li { float: left; }
 .pic_wrap ul li img { display:block; width:193px; height:288px; }
-.m-slide a.prev { background: url(../images/sld_btn.png) no-repeat 0 -63px; position: absolute; left: -43px;top: 124px; width: 43px; height: 63px; }
-.m-slide a.next {  background: url(../images/sld_btn.png) no-repeat ; position: absolute; right: -43px; top: 124px; width: 43px; height: 63px; }
+.m-slide a.prev { background: url(../images/sld_btn.png) no-repeat 0 -63px; position: absolute; left: -43px;top: 124px; width: 43px; height: 63px; filter:alpha(opacity:0); opacity: 0; }
+.m-slide a.next {  background: url(../images/sld_btn.png) no-repeat ; position: absolute; right: -43px; top: 124px; width: 43px; height: 63px; filter:alpha(opacity:0); opacity: 0; }
 
 
 
@@ -72,7 +72,7 @@ body { background: url(../images/bg.gif) repeat-x #fff; }
 .cnt_dld h3 {  font-family: "微软雅黑"; font-size: 15px;  line-height: 30px; margin-bottom: 10px; }
 .cnt_dld h3 a { color: #ac0001; }
 .cnt_dld h3 span{ color: #0d0001; }
-.cnt_dld ul {  background: #f4f4f4;  height: 300px; padding: 10px 0; }
+.cnt_dld ul {  background: #f4f4f4;  height: 320px; padding: 10px 0; }
 .cnt_dld ul li { float: left;  width: 310px; display: block; height: 22px; line-height: 22px; position: relative; margin: 5px 0; }
 .cnt_dld ul li,.cnt_dld ul li a {  color: #414141; font-size: 14px;  }
 .cnt_dld ul li a { margin-left: 5px; line-height: 22px; }

@@ -97,17 +97,26 @@ happybook.app.move1 = function()
 
 	function slide(prevBar,nextBar,oUl,aLi)
 	{
+		var timer = setInterval(auto,3000);
+
+		oUl.onmouseover = function()
+		{
+			clearInterval(timer);
+			happybook.ui.animate(prevBar,{opacity:100});
+			happybook.ui.animate(nextBar,{opacity:100});
+		};
+		oUl.onmouseout = function()
+		{
+			timer = setInterval(auto,3000);
+			happybook.ui.animate(prevBar,{opacity:0});
+			happybook.ui.animate(nextBar,{opacity:0});
+		};
+
 		nextBar.onclick = function()
 		{
-			if(iNow == aLi.length/2)
-			{
-				iNow = 0;
-				oUl.style.left = 0;
-			}
-			iNow++;
-			var leftVal = -(iNow*aLi[0].offsetWidth);
-			moveLeft(oUl,leftVal);
+			auto();
 		};
+
 		prevBar.onclick = function()
 		{
 			if(iNow == 0)
@@ -119,6 +128,17 @@ happybook.app.move1 = function()
 			var rightVal = -(iNow*aLi[0].offsetWidth);
 			moveRight(oUl,rightVal);
 		};
+		function auto()
+		{
+			if(iNow == aLi.length/2)
+			{
+				iNow = 0;
+				oUl.style.left = 0;
+			}
+			iNow++;
+			var leftVal = -(iNow*aLi[0].offsetWidth);
+			moveLeft(oUl,leftVal);
+		}
 
 	}
 
@@ -146,18 +166,22 @@ happybook.app.move2 = function()
 	oUl2.style.width = aLi2[0].offsetWidth * aLi2.length + 'px';
 	slide(prevBar2,nextBar2,oUl2,aLi2);
 
+
 	function slide(prevBar,nextBar,oUl,aLi)
 	{
+		var timer = setInterval(auto,3000);
+
+		oUl.onmouseover = function()
+		{
+			clearInterval(timer);
+		};
+		oUl.onmouseout = function()
+		{
+			timer = setInterval(auto,3000);
+		};
 		nextBar.onclick = function()
 		{
-			if(iNow == aLi.length/2)
-			{
-				iNow = 0;
-				oUl.style.left = 0;
-			}
-			iNow++;
-			var leftVal = -(iNow*aLi[0].offsetWidth);
-			moveLeft(oUl,leftVal);
+			
 		};
 		prevBar.onclick = function()
 		{
@@ -170,6 +194,17 @@ happybook.app.move2 = function()
 			var rightVal = -(iNow*aLi[0].offsetWidth);
 			moveRight(oUl,rightVal);
 		};
+		function auto()
+		{
+			if(iNow == aLi.length/2)
+			{
+				iNow = 0;
+				oUl.style.left = 0;
+			}
+			iNow++;
+			var leftVal = -(iNow*aLi[0].offsetWidth);
+			moveLeft(oUl,leftVal);
+		}
 
 	}
 

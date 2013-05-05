@@ -20,9 +20,9 @@
 		<div class="m-log">
 			<form action="" method="post">
 				<ul>
-					<li><span>用户名</span><input type="text" name="username"></li>
-					<li><span>密码</span><input type="password" name="password"></li>
-					<li class="m-log-btn"><input type="button" value="登录"></li>
+					<li><label for="username">用户名</label><input type="text" name="username"></li>
+					<li><label for="password">密码</label><input type="password" name="password"></li>
+					<li class="m-log-btn"><input type="button" value="登&nbsp;录"></li>
 				</ul>
 			</form>
 		</div>
@@ -39,22 +39,15 @@
 		<!-- logo结束 -->
 
 		<!-- 天气 -->
-		<div class="m-weather">
-			<img src="images/weather.png" alt="">
-			<div class="m-weather-msg">
-				<ul>
-					<li class="city">长沙</li>
-					<li class="pinyin">changsha</li>
-					<li class="tp">25℃</li>
-					<li class="wt">晴转多云</li>
-				</ul>
-			</div>
-		</div>
+		<div class="weather">
+            <iframe src="http://www.thinkpage.cn/weather/weather.aspx?uid=&cid=|C%EF%BD%88%EF%BD%81%EF%BD%8E%EF%BD%87sha&l=zh-CHS&p=TWC&a=0&u=C&s=1&m=0&x=0&d=3&fc=&bgc=&bc=&ti=1&in=1&li=2&ct=iframe" frameborder="0" scrolling="no" width="200" height="130" allowTransparency="true">
+            </iframe>
+        </div>
 		<!-- 天气结束 -->
 	</div>
 
-	<div class="wrap">
-		<div class="container">
+	<div class="outer_wrap">
+		<div class="inner_wrap">
 			<!-- 导航 -->
 			<div class="nav">
 				<div class="nav_fix nav_head"></div>
@@ -161,11 +154,497 @@
                 </div>
                 <div class="nav_fix nav_tail"></div>
 			</div>
+            <!-- 结束导航 -->
+            
+            <!-- 所在位置和搜索框模块 -->
+            <div class="m-header">
+                <p class="pos"><strong>您现在的位置：</strong>
+                    <a href="">首页</a>&nbsp;>&nbsp;<a href="">开卷有益</a>&nbsp;>&nbsp;<a href="">开心书屋</a>
+                </p>
+                <div class="searchBar">
+                    <form action="" method="">
+                        <ul>
+                            <li>
+                                <input class="txtArea" name="keyword" type="text"  x-webkit-speech="" x-webkit-grammar="builtin:translate" autocomplete="off" placeholder="请输入关键词">
+                            </li>
+                            <li><p>书名<span>·作者名</span></p></li>
+                            <li><input type="submit" value="搜&nbsp;索" class="m-search-btn"></li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+            <!-- 结束所在位置和搜索框模块 -->
+
+            <!-- 幻灯片 -->
+            <div class="m-slide" id="move1">
+                <a class="prev" href="javascript:;"></a>
+                <a class="next" href="javascript:;"></a>
+                <div class="pic_wrap">
+                    <ul>
+                        <li><a href="#"><img src="images/books/book1.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="images/books/book2.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="images/books/book3.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="images/books/book4.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="images/books/book5.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 结束幻灯片 -->
 		</div>
 	</div>
 
+
+    <!-- 主内容 -->
+    <div class="content_wrap">
+        <div class="bd clear">
+            <div class="m-title">
+                <h2><span>世界名著/</span>The world famous</h2>
+                <p>「中国名著　•　外国名著」</p>
+            </div>
+            <div class="cnt_wrap1">
+                <div class="world_famous">
+                    <ul>
+                        <li>
+                            <img src="images/books/world_famous/1.jpg" alt="">
+                            <div>
+                                <h3><a href="#">【小说《复活》】</a></h3>
+                                <p>聂赫留朵夫公爵是莫斯科地方法院的陪审员。一次他参加审理一个毒死人的命案。不料，从妓女玛丝洛娃具有特色的眼神中认出原来她是他青年时代热恋过的卡秋莎。于是十年前的往象一幕幕展现在聂赫留道夫眼前：当时他还是一个大学生，暑期住在姑妈的庄园里写论文···  「详细」</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/books/world_famous/2.jpg" alt="">
+                            <div>
+                                <h3><a href="#">【小说《复活》】</a></h3>
+                                <p>聂赫留朵夫公爵是莫斯科地方法院的陪审员。一次他参加审理一个毒死人的命案。不料，从妓女玛丝洛娃具有特色的眼神中认出原来她是他青年时代热恋过的卡秋莎。于是十年前的往象一幕幕展现在聂赫留道夫眼前：当时他还是一个大学生，暑期住在姑妈的庄园里写论文···  「详细」</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/books/world_famous/3.jpg" alt="">
+                            <div>
+                                <h3><a href="#">【小说《复活》】</a></h3>
+                                <p>聂赫留朵夫公爵是莫斯科地方法院的陪审员。一次他参加审理一个毒死人的命案。不料，从妓女玛丝洛娃具有特色的眼神中认出原来她是他青年时代热恋过的卡秋莎。于是十年前的往象一幕幕展现在聂赫留道夫眼前：当时他还是一个大学生，暑期住在姑妈的庄园里写论文···  「详细」</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cnt_dld">
+                    <h3><a href=""><span>下载排行榜/</span>Download</a></h3>
+                    <ul>
+                        <li>
+                            <span>1</span>
+                            <a href="#">双面胶</a>
+                            <p>[10041]</p>
+                        </li>
+                        <li>
+                            <span>2</span>
+                            <a href="">叶圣陶文集</a>
+                            <p>[8249]</p>
+                        </li>
+                        <li>
+                            <span>3</span>
+                            <a href="">啼笑姻缘续集</a>
+                            <p>[7826]</p>
+                        </li>
+                        <li>
+                            <span>4</span>
+                            <a href="">卡耐基口才学</a>
+                            <p>[7749]</p>
+                        </li>
+                        <li>
+                            <span>5</span>
+                            <a href="">啼笑姻缘</a>
+                            <p>[7263]</p>
+                        </li>
+                        <li>
+                            <span>6</span>
+                            <a href="">马可波罗游记</a>
+                            <p>[6936]</p>
+                        </li>
+                        <li>
+                            <span>7</span>
+                            <a href="">资治通鉴·周纪</a>
+                            <p>[6560]</p>
+                        </li>
+                        <li>
+                            <span>8</span>
+                            <a href="">白银时代</a>
+                            <p>[6543]</p>
+                        </li>
+                        <li>
+                            <span>9</span>
+                            <a href="">王小波文集</a>
+                            <p>[6052]</p>
+                        </li>
+                        <li>
+                            <span>10</span>
+                            <a href="">古代人的自由与现代</a>
+                            <p>[5556]</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="bd clear">
+            <div class="m-title">
+                <h2><span>休闲生活/</span>Recreation</h2>
+                <p>「武侠小说　•　时尚生活　•　流行文字」</p>
+            </div>
+            <div class="cnt_wrap2">
+                <div class="cnt_dld">
+                    <h3><a href=""><span>下载排行榜/</span>Download</a></h3>
+                    <ul>
+                        <li>
+                            <span>1</span>
+                            <a href="#">双面胶</a>
+                            <p>[10041]</p>
+                        </li>
+                        <li>
+                            <span>2</span>
+                            <a href="">叶圣陶文集</a>
+                            <p>[8249]</p>
+                        </li>
+                        <li>
+                            <span>3</span>
+                            <a href="">啼笑姻缘续集</a>
+                            <p>[7826]</p>
+                        </li>
+                        <li>
+                            <span>4</span>
+                            <a href="">卡耐基口才学</a>
+                            <p>[7749]</p>
+                        </li>
+                        <li>
+                            <span>5</span>
+                            <a href="">啼笑姻缘</a>
+                            <p>[7263]</p>
+                        </li>
+                        <li>
+                            <span>6</span>
+                            <a href="">马可波罗游记</a>
+                            <p>[6936]</p>
+                        </li>
+                        <li>
+                            <span>7</span>
+                            <a href="">资治通鉴·周纪</a>
+                            <p>[6560]</p>
+                        </li>
+                        <li>
+                            <span>8</span>
+                            <a href="">白银时代</a>
+                            <p>[6543]</p>
+                        </li>
+                        <li>
+                            <span>9</span>
+                            <a href="">王小波文集</a>
+                            <p>[6052]</p>
+                        </li>
+                        <li>
+                            <span>10</span>
+                            <a href="">古代人的自由与现代</a>
+                            <p>[5556]</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="recreation">
+                    <ul>
+                        <li>
+                            <img src="images/books/recreation/1.jpg" alt="">
+                            <a href="">「阅读」</a>
+                            <div>
+                                <h3><a href="#">【小说《复活》】</a></h3>
+                                <p>作者：列夫托尔斯泰 </p>  
+                                <p>分类：经典名著</p>
+                                <p>《复活》是俄国文豪</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/books/recreation/2.jpg" alt="">
+                            <a href="">「阅读」</a>
+                            <div>
+                                <h3><a href="#">【小说《复活》】</a></h3>
+                                <p>作者：列夫托尔斯泰 </p>  
+                                <p>分类：经典名著</p>
+                                <p>《复活》是俄国文豪</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/books/recreation/3.jpg" alt="">
+                            <a href="">「阅读」</a>
+                            <div>
+                                <h3><a href="#">【小说《复活》】</a></h3>
+                                <p>作者：列夫托尔斯泰 </p>  
+                                <p>分类：经典名著</p>
+                                <p>《复活》是俄国文豪</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/books/recreation/4.jpg" alt="">
+                            <a href="">「阅读」</a>
+                            <div>
+                                <h3><a href="#">【小说《复活》】</a></h3>
+                                <p>作者：列夫托尔斯泰 </p>  
+                                <p>分类：经典名著</p>
+                                <p>《复活》是俄国文豪</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="bd clear">
+            <div class="m-title">
+                <h2><span>学习资源/</span>Learning Resources</h2>
+                <p>「法律财经　•　科普技术　•　电子教程　•　英文广场」</p>
+            </div>
+            <div class="cnt_wrap3">
+                <div class="learning_resources">
+                    <div class="lr_cnt">
+                        <ul>
+                            <li>
+                                <a href="#" class="lr_cnt_img"><img src="images/books/learning/1.jpg" alt=""></a>
+                                <div>
+                                    <a href="#"><h3><a href="#">【小说《复活》】</a></h3></a>
+                                    <p>作者：列夫托尔斯泰</p>
+                                    <p>分类：经典名著</p>
+                                    <p class="detail">《复活》是俄国文豪托尔斯泰的代表作是俄国文豪托尔斯泰的代表作是俄国文豪托尔斯泰的代表作</p>
+                                </div>
+                            </li>
+                            <li class="fr">
+                                <a href="#" class="lr_cnt_img"><img src="images/books/learning/2.jpg" alt=""></a>
+                                <div>
+                                    <a href="#"><h3><a href="#">【小说《复活》】</a></h3></a>
+                                    <p>作者：列夫托尔斯泰</p>
+                                    <p>分类：经典名著</p>
+                                    <p class="detail">《复活》是俄国文豪托尔斯泰的代表作是俄国文豪托尔斯泰的代表作是俄国文豪托尔斯泰的代表作</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="lr_slide">
+                        <div class="lr_slide_wrap" id="move2">
+                            <a href="javascript:;" class="lr_prev"></a>
+                            <a href="javascript:;" class="lr_next"></a>
+                            <div class="sld_wrap">
+                                <ul>
+                                    <li><a href="#"><img src="images/books/learning/thumb/1.jpg" alt=""></a></li>
+                                    <li><a href="#"><img src="images/books/learning/thumb/2.jpg" alt=""></a></li>
+                                    <li><a href="#"><img src="images/books/learning/thumb/3.jpg" alt=""></a></li>
+                                    <li><a href="#"><img src="images/books/learning/thumb/4.jpg" alt=""></a></li>
+                                    <li><a href="#"><img src="images/books/learning/thumb/5.jpg" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cnt_dld">
+                    <h3><a href=""><span>下载排行榜/</span>Download</a></h3>
+                    <ul>
+                        <li>
+                            <span>1</span>
+                            <a href="#">双面胶</a>
+                            <p>[10041]</p>
+                        </li>
+                        <li>
+                            <span>2</span>
+                            <a href="">叶圣陶文集</a>
+                            <p>[8249]</p>
+                        </li>
+                        <li>
+                            <span>3</span>
+                            <a href="">啼笑姻缘续集</a>
+                            <p>[7826]</p>
+                        </li>
+                        <li>
+                            <span>4</span>
+                            <a href="">卡耐基口才学</a>
+                            <p>[7749]</p>
+                        </li>
+                        <li>
+                            <span>5</span>
+                            <a href="">啼笑姻缘</a>
+                            <p>[7263]</p>
+                        </li>
+                        <li>
+                            <span>6</span>
+                            <a href="">马可波罗游记</a>
+                            <p>[6936]</p>
+                        </li>
+                        <li>
+                            <span>7</span>
+                            <a href="">资治通鉴·周纪</a>
+                            <p>[6560]</p>
+                        </li>
+                        <li>
+                            <span>8</span>
+                            <a href="">白银时代</a>
+                            <p>[6543]</p>
+                        </li>
+                        <li>
+                            <span>9</span>
+                            <a href="">王小波文集</a>
+                            <p>[6052]</p>
+                        </li>
+                        <li>
+                            <span>10</span>
+                            <a href="">古代人的自由与现代</a>
+                            <p>[5556]</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="bd clear">
+            <div class="m-title">
+                <h2><span>文史文化/</span>Literature</h2>
+                <p>「人物传记　•　纪实文学　•　散文诗歌」</p>
+            </div>
+
+            <div class="cnt_wrap4">
+                <div class="cnt_dld">
+                    <h3><a href=""><span>下载排行榜/</span>Download</a></h3>
+                    <ul>
+                        <li>
+                            <span>1</span>
+                            <a href="#">双面胶</a>
+                            <p>[10041]</p>
+                        </li>
+                        <li>
+                            <span>2</span>
+                            <a href="">叶圣陶文集</a>
+                            <p>[8249]</p>
+                        </li>
+                        <li>
+                            <span>3</span>
+                            <a href="">啼笑姻缘续集</a>
+                            <p>[7826]</p>
+                        </li>
+                        <li>
+                            <span>4</span>
+                            <a href="">卡耐基口才学</a>
+                            <p>[7749]</p>
+                        </li>
+                        <li>
+                            <span>5</span>
+                            <a href="">啼笑姻缘</a>
+                            <p>[7263]</p>
+                        </li>
+                        <li>
+                            <span>6</span>
+                            <a href="">马可波罗游记</a>
+                            <p>[6936]</p>
+                        </li>
+                        <li>
+                            <span>7</span>
+                            <a href="">资治通鉴·周纪</a>
+                            <p>[6560]</p>
+                        </li>
+                        <li>
+                            <span>8</span>
+                            <a href="">白银时代</a>
+                            <p>[6543]</p>
+                        </li>
+                        <li>
+                            <span>9</span>
+                            <a href="">王小波文集</a>
+                            <p>[6052]</p>
+                        </li>
+                        <li>
+                            <span>10</span>
+                            <a href="">古代人的自由与现代</a>
+                            <p>[5556]</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="literature">
+                    <ul>
+                        <li>
+                            <img src="images/books/recreation/1.jpg" alt="">
+                            <a href="">「阅读」</a>
+                            <div>
+                                <h3><a href="#">【小说《复活》】</a></h3>
+                                <p>作者：列夫托尔斯泰 </p>  
+                                <p>分类：经典名著</p>
+                                <p>《复活》是俄国文豪</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/books/recreation/2.jpg" alt="">
+                            <a href="">「阅读」</a>
+                            <div>
+                                <h3><a href="#">【小说《复活》】</a></h3>
+                                <p>作者：列夫托尔斯泰 </p>  
+                                <p>分类：经典名著</p>
+                                <p>《复活》是俄国文豪</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/books/recreation/3.jpg" alt="">
+                            <a href="">「阅读」</a>
+                            <div>
+                                <h3><a href="#">【小说《复活》】</a></h3>
+                                <p>作者：列夫托尔斯泰 </p>  
+                                <p>分类：经典名著</p>
+                                <p>《复活》是俄国文豪</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/books/recreation/4.jpg" alt="">
+                            <a href="">「阅读」</a>
+                            <div>
+                                <h3><a href="#">【小说《复活》】</a></h3>
+                                <p>作者：列夫托尔斯泰 </p>  
+                                <p>分类：经典名著</p>
+                                <p>《复活》是俄国文豪</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 结束主内容 -->
+
+    <!-- footer -->
+    <div class="footer">
+       <div class="footer_inner inset_type">
+                <p>
+                    <a href="#">关于我们</a>
+                    <a href="#">服务条款</a>
+                    <a href="#">广告服务</a>
+                    <a href="#">创新园招聘</a>
+                    <a href="#">网站导航</a>
+                    <a href="#">版权所有</a>
+                </p>
+                <p>联系地址：中南大学本部升华前楼204&nbsp; 联系电话：0731-88836377&nbsp; 备案号：湘icp备120035642</p>
+            </div>
+    </div>
+
 	<script src="scripts/jquery.js" language="javascript" charset="utf-8"></script>
     <script src="scripts/menu.js" language="javascript" charset="utf-8"></script>
-	<script src="script/main.js"></script>
+    <script src="scripts/main.js" language="javascript" charset="utf-8"></script>
+    <!--[if IE 6]>
+    <script src="scripts/png.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix('*');
+    </script>
+    <![endif]-->
+
+    <script>
+        $(function(){
+            var $dld = $('.cnt_dld');
+            $dld.each(function(){
+                var $oUl= this.getElementsByTagName('ul')[0];
+                var $aSpan = $oUl.getElementsByTagName('span');
+                for (var i = 0; i < 3; i++) 
+                {
+                    $aSpan[i].style.background = '#ac0001';
+                }
+            });
+        });
+    </script>
 </body>
 </html>

@@ -181,7 +181,7 @@ happybook.app.move2 = function()
 		};
 		nextBar.onclick = function()
 		{
-			
+			auto();
 		};
 		prevBar.onclick = function()
 		{

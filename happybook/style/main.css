@@ -51,9 +51,8 @@ body { background: url(../images/bg.gif) repeat-x #fff; }
 .pic_wrap ul { position: absolute; left: 0; top: 0; }
 .pic_wrap ul li { float: left; }
 .pic_wrap ul li img { display:block; width:193px; height:288px; }
-.m-slide a.prev { background: url(../images/sld_btn.png) no-repeat 0 -63px; position: absolute; left: -43px;top: 124px; width: 43px; height: 63px; }
-.m-slide a.next {  background: url(../images/sld_btn.png) no-repeat ; position: absolute; right: -43px; top: 124px; width: 43px; height: 63px; }
-
+.m-slide a.prev { background: url(../images/sld_btn.png) no-repeat 0 -63px; position: absolute; left: -43px;top: 124px; width: 43px; height: 63px; opacity:0;filter:alpha(opacity:0);}
+.m-slide a.next {  background: url(../images/sld_btn.png) no-repeat ; position: absolute; right: -43px; top: 124px; width: 43px; height: 63px;  opacity:0;filter:alpha(opacity:0);}
 
 
 /*主内容部分*/

@@ -10,7 +10,8 @@
 }
 /*+------------------------------------------------------+overwirte*/
 .banner{
-    height:350px;
+    margin-top:10px;
+    height:330px;
     position:relative;
 }
 .foto{
@@ -45,7 +46,7 @@
     background-image:url(../images/photo_top.png);
     background-position:center center;
     left:40px;
-    bottom:30px;
+    bottom:15px;
 }
 .slider_can{
     width:580px;
@@ -70,7 +71,7 @@
     width:100%;
     height:40px;
     line-height:40px;
-    font-size:20px;
+    font-size:16px;
     text-align:center;
     color:white;
     position:absolute;
@@ -277,6 +278,7 @@
 }
 .dailynews.box{
     padding-bottom:0;
+    margin-bottom:15px;
     background-image:url(../images/dailynews_border.jpg);
     background-repeat:repeat-y;
 }
@@ -410,15 +412,17 @@
 }
 .news_list{
     float:left;
-    font-family:'宋体';
-    font-size:15px;
-    padding-left:15px;
+    font-family:'微软雅黑','宋体';
+    font-size:12px;
+    padding-left:8px;
     background-repeat:no-repeat;
-    background-position:left center;
+    background-position:5px center;
 }
 .news_list li{
-    margin:6px 0;
     padding-left:15px;
+    font-size:14px;
+    height:26px;
+    line-height:26px;
     background-image:url(../images/square.png);
     background-repeat:no-repeat;
     background-position:left center;
@@ -428,6 +432,7 @@
     background-image:url(../images/topic_box_border.jpg);
     background-repeat:repeat-y;
     padding-bottom:0;
+    margin-bottom:15px;
 }
 .topic_box.box .box_body{
     width:753px;

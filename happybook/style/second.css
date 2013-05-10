@@ -1,0 +1,72 @@
+.m-sbook-cnt{
+	float: right;
+	width: 616px;
+	margin-top: 12px;
+	position: relative;
+}
+
+.m-sbook-cnt ul {
+	position: relative;
+}
+
+.m-sbook-cnt ul li{
+	margin: 10px;
+	overflow: auto;
+}
+.m-sbook-cnt div.sbook-detail{
+	width: 588px;
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.m-sbook-cnt ul li a.sb-img{
+	border: 1px solid #333;
+	display: block;
+	width: 114px;
+	height: 167px;
+	float: left;
+}
+.m-sbook-cnt ul li div.desc{
+	width: 450px;
+	height: 167px;
+	float: right;
+}
+
+.m-sbook-cnt h3{
+	font-size: 15px;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+.m-sbook-cnt h3 a{
+	color: #ac0001;
+	font-family: "微软雅黑";
+}
+
+.m-sbook-cnt div.desc span{
+	display: block;
+	font-weight: bold;
+	color: #ac0001;
+	line-height: 20px;
+	font-size: 13px;
+}
+.m-sbook-cnt div.desc p{
+	margin-top: 5px;
+	text-indent: 30px;
+	letter-spacing: 1.5px;
+	line-height: 25px;
+}
+.m-sbook-cnt div.desc p span{
+	text-align: right;
+	float: right;
+}
+.m-sbook-cnt div.desc p span a{
+	font-size: 12px;
+	font-weight: normal;
+	color: #ac0001;
+}
+.m-sbook-cnt div.desc p span a:hover{
+	text-decoration: underline;
+}
+
+
+

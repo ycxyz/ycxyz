@@ -99,13 +99,13 @@ happybook.app.move1 = function()
 	{
 		var timer = setInterval(auto,3000);
 
-		oUl.onmouseover = function()
+		prevBar.onmouseover = nextBar.onmouseover = oUl.onmouseover = function()
 		{
 			clearInterval(timer);
 			happybook.ui.animate(prevBar,{opacity:100});
 			happybook.ui.animate(nextBar,{opacity:100});
 		};
-		oUl.onmouseout = function()
+		prevBar.onmouseout = nextBar.onmouseout = oUl.onmouseout = function()
 		{
 			timer = setInterval(auto,3000);
 			happybook.ui.animate(prevBar,{opacity:0});
@@ -124,7 +124,7 @@ happybook.app.move1 = function()
 				iNow = aLi.length/2;
 				oUl.style.left = -oUl.offsetWidth/2 + 'px';
 			}
-			iNow--;
+			iNow-=5;
 			var rightVal = -(iNow*aLi[0].offsetWidth);
 			moveRight(oUl,rightVal);
 		};
@@ -135,7 +135,7 @@ happybook.app.move1 = function()
 				iNow = 0;
 				oUl.style.left = 0;
 			}
-			iNow++;
+			iNow+=5;
 			var leftVal = -(iNow*aLi[0].offsetWidth);
 			moveLeft(oUl,leftVal);
 		}
@@ -171,11 +171,11 @@ happybook.app.move2 = function()
 	{
 		var timer = setInterval(auto,3000);
 
-		oUl.onmouseover = function()
+		prevBar.onmouseover = nextBar.onmouseover = oUl.onmouseover = function()
 		{
 			clearInterval(timer);
 		};
-		oUl.onmouseout = function()
+		prevBar.onmouseout = nextBar.onmouseout = oUl.onmouseout = function()
 		{
 			timer = setInterval(auto,3000);
 		};
@@ -190,7 +190,7 @@ happybook.app.move2 = function()
 				iNow = aLi.length/2;
 				oUl.style.left = -oUl.offsetWidth/2 + 'px';
 			}
-			iNow--;
+			iNow-=5;
 			var rightVal = -(iNow*aLi[0].offsetWidth);
 			moveRight(oUl,rightVal);
 		};
@@ -201,7 +201,7 @@ happybook.app.move2 = function()
 				iNow = 0;
 				oUl.style.left = 0;
 			}
-			iNow++;
+			iNow+=5;
 			var leftVal = -(iNow*aLi[0].offsetWidth);
 			moveLeft(oUl,leftVal);
 		}

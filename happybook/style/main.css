@@ -1,14 +1,3 @@
-/*去除自带样式*/
-body,html,div, form, input, select, ul, ol, li, p, h1, h2, h3, h4, h5, h6, p, dd, dt, dl { margin: 0; padding: 0; }
-ul,ol { list-style: none; }
-a { text-decoration: none; }
-p,div { display: block; }
-input { outline: none; border: none; }
-img { border: none; }
-
-/*设置body背景*/
-body { background: url(../images/bg.gif) repeat-x #fff; }
-
 /*header样式*/
 .g-hd { width: 976px; height: 37px; margin: 0 auto; }
 
@@ -16,24 +5,24 @@ body { background: url(../images/bg.gif) repeat-x #fff; }
 .g-hd-l { float: left;  height: 37px; }
 .g-hd-l ul { float: left; height: 100%;   }
 .g-hd-l ul li { float: left; height: 100%; margin-right: 6px; padding-right: 13px; background: url(../images/hd_li_bg.gif) no-repeat right; font-size: 10px; }
-.g-hd-l ul li a { color: #fff; line-height: 37px; display: block; }
+.g-hd-l ul li a { color: #fff; line-height: 37px; display: block; letter-spacing: 1px; }
 .g-hd-l ul li a:hover { color: #eee; }
-.g-hd-l ul li.weibo a { background: url(../images/weibo.png) no-repeat 0 0; padding-left: 34px; width: 50px; }
+.g-hd-l ul li.weibo a { background: url(../images/weibo.png) no-repeat 0 0; padding-left: 34px; width: 52px; }
 .g-hd-l ul li.weibo a:hover { background: url(../images/weibo.png) no-repeat 0 -37px; }
 .g-hd-l ul li.g-hd-no-bg { background: none; }
 
 /*header右侧登陆框*/
 .m-log { float: right; padding-right: 7px; }
-.m-log ul { float: left; line-height: 37px; color: #fff; font-size: 10px;  display: block;  }
-.m-log ul li{ float: left;margin-left: 23px; }
-.m-log ul li span { height: 100%; line-height: 37px; }
+.m-log ul { float: left;  color: #fff; font-size: 10px;  }
+.m-log ul li{ float: left;margin-left: 23px; height: 37px;  line-height: 37px; vertical-align:middle; }
+.m-log ul li label { letter-spacing: 1px; margin: 5px; }
 .m-log ul li.m-log-btn { margin-left: 12px; }
-.m-log ul li input { width: 84px; height: 19px; margin-left: 9px; border: none; line-height: 19px; }
-.m-log ul li.m-log-btn input { background: url(../images/g_hd_btn.png) no-repeat; border: none; color: #fff; width: 44px; height: 21px; }
+.m-log ul li input { width: 84px; height: 21px; margin-left: 9px; border: none; line-height: 21px; text-indent: 2px; padding: 1px 0; _vertical-align: middle; _margin:2px 0;  }
+.m-log ul li.m-log-btn input { background: url(../images/g_hd_btn.png) no-repeat; border: none; color: #fff; width: 44px; height: 21px; margin: 4px 0; cursor: pointer; }
 
 
 /*导航下面的header模块*/
-.m-header,.m-header a { height: 30px; line-height: 30px; font-size: 14px; color: #ab0b0c; margin-top: 40px; }
+.m-header,.m-header a { height: 30px; line-height: 30px; font-size: 12px; color: #ab0b0c; margin-top: 30px; }
 .m-header a:hover { text-decoration: underline; }
 .m-header .pos { float: left; }
 .searchBar { float: right; line-height: 30px; }
@@ -42,7 +31,7 @@ body { background: url(../images/bg.gif) repeat-x #fff; }
 .searchBar span { color: #7b7b7b; height: 100%; line-height: 30px; }
 .searchBar input { font-size: 14px;  }
 .searchBar input.txtArea { width: 155px; height: 22px; line-height: 24px; border: 1px solid #ab0b0c; padding: 2px 5px;  }
-.searchBar input.m-search-btn { background: url(../images/g_hd_btn.png) no-repeat;  color: #fff; width: 44px; height: 21px; font-size: 12px; margin-right: 5px; }
+.searchBar input.m-search-btn { background: url(../images/g_hd_btn.png) no-repeat;  color: #fff; width: 44px; height: 21px; font-size: 12px; margin-right: 5px; cursor: pointer; }
 
 
 /*幻灯片*/
@@ -51,8 +40,10 @@ body { background: url(../images/bg.gif) repeat-x #fff; }
 .pic_wrap ul { position: absolute; left: 0; top: 0; }
 .pic_wrap ul li { float: left; }
 .pic_wrap ul li img { display:block; width:193px; height:288px; }
-.m-slide a.prev { background: url(../images/sld_btn.png) no-repeat 0 -63px; position: absolute; left: -43px;top: 124px; width: 43px; height: 63px; opacity:0;filter:alpha(opacity:0);}
-.m-slide a.next {  background: url(../images/sld_btn.png) no-repeat ; position: absolute; right: -43px; top: 124px; width: 43px; height: 63px;  opacity:0;filter:alpha(opacity:0);}
+.m-slide a.prev { background: url(../images/sld_btn_l.png) no-repeat ; position: absolute; left: -66px;top: 90px; width: 66px; height: 131px; filter:alpha(opacity:0); opacity: 0; }
+.m-slide a.next {  background: url(../images/sld_btn_r.png) no-repeat ; position: absolute; right: -66px; top: 90px; width: 66px; height: 131px; filter:alpha(opacity:0); opacity: 0; }
+.m-slide a.prev:hover{ background: url(../images/sld_btnl.png) no-repeat ; position: absolute; left: -66px;top: 90px; width: 66px; height: 131px; }
+.m-slide a.next:hover{ background: url(../images/sld_btnr.png) no-repeat ; position: absolute; right: -66px; top: 90px; width: 66px; height: 131px;}
 
 
 /*主内容部分*/
@@ -63,26 +54,8 @@ body { background: url(../images/bg.gif) repeat-x #fff; }
 /*标题*/
 .bd .m-title h2 { float: left; display: block; font-size: 17px; }
 .bd .m-title h2 span { color: #0d0001; }
-.bd .m-title  p { float: right; display: block; font-size: 16px; }
-
-
-/*下载排行模块*/
-.cnt_dld { width: 312px; position: relative; }
-.cnt_dld h3 {  font-family: "微软雅黑"; font-size: 15px;  line-height: 30px; margin-bottom: 10px; }
-.cnt_dld h3 a { color: #ac0001; }
-.cnt_dld h3 span{ color: #0d0001; }
-.cnt_dld ul {  background: #f4f4f4;   padding: 10px 0; }
-.cnt_dld ul li { float: left;  width: 310px; display: block; height: 22px; line-height: 22px; position: relative; margin: 5px 0; }
-.cnt_dld ul li,.cnt_dld ul li a {  color: #414141; font-size: 14px;  }
-.cnt_dld ul li a { margin-left: 5px; line-height: 22px; }
-.cnt_dld ul{
-	_height: 320px;
-	overflow:auto !important;
-	overflow:hidden;
-}
-
-.cnt_dld ul li p { position: absolute; right: 0; top: 0; text-align: left; width: 70px;   }
-.cnt_dld ul li span { width: 22px; height: 22px; margin-left: 20px; background: #a5a5a5; float: left; color: #fff; text-align: center; line-height: 22px; } 
+.bd .m-title  p { float: right; display: block;  }
+ 
 
 .cnt_wrap1,.cnt_wrap2,.cnt_wrap3,.cnt_wrap4 { position: relative; }
 .cnt_wrap1 .cnt_dld,.cnt_wrap3 .cnt_dld { float: right;  margin: 15px 0; }
@@ -96,8 +69,9 @@ body { background: url(../images/bg.gif) repeat-x #fff; }
 .world_famous ul li img { float: left; }
 .world_famous ul li div { float: left; width: 530px; height: 100px;  margin-left: 20px; padding: 5px 0; }
 
-.world_famous ul li div h3 a{ color: #ac0001; font-size: 16px; font-family: "微软雅黑";  }
-.world_famous ul li div p { font-size: 14px; margin: 5px 0; font-family: "宋体"; line-height: 20px;  }
+.world_famous ul li div h3 a{ color: #ac0001; font-size: 15px; font-family: "微软雅黑";  }
+.world_famous ul li div p {  margin: 5px 0; font-family: "宋体"; line-height: 20px;  }
+.world_famous ul li div p a:hover{ text-decoration: underline;}
 
 
 /*休闲生活*/
@@ -108,8 +82,8 @@ body { background: url(../images/bg.gif) repeat-x #fff; }
 .recreation ul li { width: 150px; margin: 10px 5px; }
 .recreation ul li div { float: left; width: 145px; margin: 10px auto; }
 .recreation ul li div h3 {  line-height: 40px; }
-.recreation ul li div h3 a{ color: #ac0001; font-size: 16px; font-family: "微软雅黑"; display: inline-block; float: left; }
-.recreation ul li div p { line-height: 25px; font-size: 14px; float: left; width: 100%; }
+.recreation ul li div h3 a{ color: #ac0001; font-size: 15px; font-family: "微软雅黑"; display: inline-block; float: left; }
+.recreation ul li div p { line-height: 25px;  float: left; width: 100%; }
 
 
 /*学习资源*/
@@ -120,8 +94,8 @@ body { background: url(../images/bg.gif) repeat-x #fff; }
 .learning_resources .lr_cnt ul li.fr { float: right; }
 .learning_resources .lr_cnt_img { display: block; width: 142px; height: 200px;  float: left;  }
 .learning_resources .lr_cnt ul li div { width: 140px; float: left; margin-left: 10px; } 
-.learning_resources .lr_cnt ul li div a { color: #ac0001; font-size: 16px; font-family: "微软雅黑"; margin-bottom: 10px; display: block; }
-.learning_resources .lr_cnt ul li div p { line-height: 20px; font-size: 14px; float: left; }
+.learning_resources .lr_cnt ul li div a { color: #ac0001; font-size: 15px; font-family: "微软雅黑"; margin-bottom: 10px; display: block; }
+.learning_resources .lr_cnt ul li div p { line-height: 20px; float: left; }
 .learning_resources .lr_cnt ul li div p.detail { margin: 10px 0; width: 100%; }
 
 /*无缝切换*/
@@ -142,5 +116,5 @@ body { background: url(../images/bg.gif) repeat-x #fff; }
 .literature ul li { width: 150px; margin: 10px 5px; }
 .literature ul li div { float: left; width: 145px; margin: 10px auto; }
 .literature ul li div h3 {  line-height: 40px; }
-.literature ul li div h3 a{ color: #ac0001; font-size: 16px; font-family: "微软雅黑"; display: inline-block; float: left; }
-.literature ul li div p { line-height: 25px; font-size: 14px; float: left; width: 100%; }
+.literature ul li div h3 a{ color: #ac0001; font-size: 15px; font-family: "微软雅黑"; display: inline-block; float: left; }
+.literature ul li div p { line-height: 25px;  float: left; width: 100%; }

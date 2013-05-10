@@ -221,8 +221,6 @@ html{
 .nav li .menu-btn:hover,
 .nav li .menu-btn:focus{
     background:#731011;
-    color:yellow;
-    text-shadow:0 0 20px #fff;
     -webkit-transition:all 0.3s;
     -moz-transition:all 0.3s;
     -o-transition:all 0.3s;
@@ -342,6 +340,7 @@ html{
 .footer_inner a{
     display:inline-block;
     width:80px;
+    font-size: 12px;
     color:#fff;
     text-decoration:none;
 }

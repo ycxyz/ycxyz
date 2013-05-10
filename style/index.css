@@ -375,11 +375,12 @@
     font-size:14px;
     text-decoration:none;
     padding:0 11px;
-    border-left:1px solid #00f;
+    border-left:1px solid #000;
 }
 .sub_topic a:hover,
 .sub_topic a:focus{
-    text-shadow:0 0 10px #f00;
+    color: #ab0b0c;
+    text-decoration: none;
 }
 .topic_list .box .more{
     color:#ac0001;

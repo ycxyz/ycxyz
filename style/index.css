@@ -90,23 +90,23 @@
 }
 #slider_control{
     position:absolute;
-    right:20px;
-    bottom:20px;
+    right:11px;
+    bottom:11px;
 }
 #slider_control i{
     display:inline-block;
-    height:8px;
-    width:8px;
+    height:15px;
+    width:15px;
     border-radius:8px;
-    background:yellow;
-    margin-left:10px;
-    border:1px solid white;
+    /*background-color:#b0b0b0;*/
+    background-image: url(../images/slider_control.png) !important;
+    background-image: url(../images/slider_control.gif);
+    background-position: 0 0;
 }
 #slider_control i:hover,
 #slider_control i:focus,
 #slider_control i.now{
-    border-color:#ac0001;
-    background:#ac0001;
+    background-position: -15px 0px;
 }
 #slider_control_left,
 #slider_control_right{

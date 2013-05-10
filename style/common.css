@@ -294,30 +294,27 @@ html{
     -webkit-box-shadow: -1px 1px 10px -2px #333;
     box-shadow:         -1px 1px 10px -2px #333;
 }
-.links legend{
-    padding:3px 9px;
-    background-color:#ac0001;
-    color:#fff;
-    position:relative;
-    left:20px;
-    border-radius:5px;
-    border:1px solid #511;
-    -moz-box-shadow:    -1px 1px 10px -2px #222;
-    -ms-box-shadow:     -1px 1px 10px -2px #222;
-    -o-box-shadow:      -1px 1px 10px -2px #222;
-    -webkit-box-shadow: -1px 1px 10px -2px #222;
-    box-shadow:         -1px 1px 10px -2px #222;
-    cursor:default;
-}
+
 .links{
     margin-top:20px;
+    font-size: 14px;
+    line-height: 25px;
+}
+.links h3{
+    margin-left: 20px;
+    color: #ad0d0e;
+    cursor: default;
 }
 .links a{
     display:inline-block;
+    text-decoration: none;
+    padding: 0 5px;
+    color: #625f58;
 }
 .links a:hover,
 .links a:focus{
-    outline:1px solid #ac0001;
+    color: #ac0001 !important;
+    text-decoration: underline;
 }
 .links p{
     text-align:center;

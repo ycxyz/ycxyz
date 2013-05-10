@@ -44,9 +44,9 @@
 }
 .feed_item{
     border-bottom:1px solid red;
-    padding-bottom:20px;
-    padding-left:20px;
-    padding-top:20px;
+    padding-bottom:16px;
+    padding-left:15px;
+    padding-top:15px;
     overflow:auto;
 }
 .feed_item:hover,
@@ -54,8 +54,9 @@
     background-color:#efefef;
 }
 .feed_title{
-    height:30px;
-    line-height:30px;
+    height: 25px;
+    font-size:15px;
+    line-height:25px;
     clear:both;
 }
 .feed_title a{
@@ -69,15 +70,15 @@
 }
 .feed_image{
     float:left;
-    width:150px;
+    width:145px;
 }
 .feed_digest{
     font-size:12px;
+    width:505px;
+    float:left;
     line-height:20px;
 }
 .feed_digest p{
-    width:470px;
-    float:left;
     text-indent:2em;
     color:#555;
 }

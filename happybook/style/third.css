@@ -1,0 +1,128 @@
+.m-tbook-cnt{
+	width: 610px;
+	position: relative;
+	float: right;
+}
+
+.download{
+	padding: 30px 0;
+}
+
+.m-tbook-cnt h2{
+	font-size: 15px;
+	font-family: "微软雅黑";
+	color: #ac0001;
+}
+.cnt_wraper{
+	position: relative;
+	margin-top: 20px;
+}
+.cnt_detail{
+	width: 375px;
+	float: right;
+	margin-right: 10px;
+}
+.cnt_detail p{
+	font-size: 12px;
+	text-indent: 30px;
+	letter-spacing: 1px;
+	line-height: 25px;
+	overflow: auto;
+}
+.cnt_detail p span.read-more {
+	text-indent: 0;
+	text-align: right;
+	display: block;
+	float: right;
+	margin-left: 20px;
+	color: #ac0001;
+	width: 70px;
+	height: 30px;
+	line-height: 30px;
+	overflow: hidden;
+}
+.read-more a{
+	padding: 2px;
+	color: #ac0001;
+}
+.read-more a:hover{
+	text-decoration: underline;
+}
+.cnt_detail p a:hover{
+	text-decoration: underline;
+}
+
+.cnt_detail span{
+	width: 170px;
+	float: left;
+	font-size: 12px;
+	color: #ac0001;
+	letter-spacing: 1px;
+	line-height: 30px;
+}
+.cnt_detail span.dld{
+	width: 50px;
+	text-align: center;
+	margin-top: 20px;
+}
+.cnt_detail span.dld a{
+	display: block;
+	width: 50px;
+	height: 20px;
+	border: 1px solid #e2e2e2;
+	background: #f2f2f2;
+	color: #ac0001;
+	float: left;
+	border-radius: 5px;
+	letter-spacing: 3px;
+	line-height: 20px;
+}
+.cnt_detail span.download a:hover{
+	text-decoration: underline;
+}
+
+.other{
+	margin-top: 10px;
+}
+.other h2{
+	width: 610px;
+	height: 25px;
+	display: block;
+	background: url(../images/other_hd.jpg) no-repeat ;
+	border-bottom: 1px solid #ac0001;
+}
+.other h2 a{
+	float: right;
+	background: url(../images/more.jpg) no-repeat;
+	width: 50px;
+	height: 25px;
+}
+.other ul{
+	width: 610px;
+	position: relative;
+	margin-top: 20px;
+	overflow: auto;
+}
+.other ul li{
+	float: left;
+	margin-right: 35px;
+	border: 1px solid #7a7a7a;
+	width: 115px;
+}
+.other ul li a,.other ul li img{
+	display: block;
+	float: left;
+}
+
+.other ul li span a{
+	float: left;
+	font-size: 12px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	width: 115px;
+	color: #7a7a7a;
+}
+.other ul li span a:hover{
+	text-decoration: underline;
+}

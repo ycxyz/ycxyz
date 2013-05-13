@@ -166,7 +166,7 @@ html{
     height:49px;
 }
 .nav a{
-    font-family:'黑体';
+    font-family:'宋体';
     text-decoration:none;
 }
 .nav .nav_fix{
@@ -201,7 +201,7 @@ html{
 .nav .menu_item{
     float:left;
     height:42px;
-    width:129px;
+    width:147px;
     text-align:center;
     border-right:1px solid #111;
     border-left:1px solid #d8181a;
@@ -278,11 +278,11 @@ html{
     position:absolute;
     background-image:url(../images/arrow.png);
     background-repeat:no-repeat;
-    left:60px;
+    left:70px;
     top:0;
 }
 .menu_item.last_menu_item .pop_menu .pop_menu_arrow{
-    right:60px;
+    right:70px;
     left:auto;
 }
 .links{
@@ -333,7 +333,7 @@ html{
     margin-left:auto;
     margin-right:auto;
     text-align:center;
-    font-size: 13px;
+    font-size: 14px;
 }
 .footer_inner a{
     display:inline-block;
@@ -345,10 +345,11 @@ html{
     color:#fff;
     margin:10px;
     font-size: 12px;
+    cursor: default;
 }
 .footer_inner a:hover,
 .footer_inner a:focus{
-    font-weight:bold;
+    text-decoration: underline;
 }
 .list_box li{
     line-height:22px;

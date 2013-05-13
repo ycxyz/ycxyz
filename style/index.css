@@ -157,6 +157,9 @@
 .side_boxs .box.daily_english .box_type{
     background-position:10px -62px;
 }
+.side_boxs .box.daily_english li{
+    text-align: center;
+}
 .side_boxs .box.topic_before .box_type{
     background-position:10px -124px;
 }
@@ -469,4 +472,32 @@
 }
 .news_box.openbook .topic_type{
     background-position:16px -240px;
+}
+/*overwirte*/
+.side_boxs .box.daily_english .box_body,
+.side_boxs .box.notif_box .box_body{
+    padding: 15px 10px 15px;
+    width: 173px;
+}
+.side_boxs .box.weibo-box .box_body{
+    padding: 10px 5px;
+    width: 183px;
+}
+.openbook .book{
+    float: left;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.openbook .book h4{
+    text-align: center;
+}
+.openbook .book p{
+    margin-bottom: 5px;
+    border: 1px solid #aaa;
+    padding: 3px;
+}
+.openbook .book:hover p,
+.openbook .book:focus p{
+    border: 1px solid #ac0001;
+    background-color: #ac8c01;
 }

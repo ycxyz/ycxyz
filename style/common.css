@@ -82,6 +82,7 @@ html{
     margin-top:10px;
     border-left:1px solid #580001;
     border-right:1px solid #e20001;
+    height: 100;
 }
 .top_func{
     font-size:14px;
@@ -491,6 +492,33 @@ html{
    padding-top:5px;
    top:-30px;
 }
+.top_func .weibo a {
+     background: url(../images/weibo.png) no-repeat 0 0;
+     padding-left: 34px;
+     width: 52px;
+ }
+.top_func .weibo a:hover {
+     background: url(../images/weibo.png) no-repeat 0 -37px;
+ }
+ .g-hd-l a{
+    text-decoration: none;
+ }
+ .g-hd-l { float: left;  height: 37px; }
+.g-hd-l ul { float: left; height: 100%;   }
+.g-hd-l ul li { float: left; height: 100%; margin-right: 6px; padding-right: 13px; background: url(../images/hd_li_bg.gif) no-repeat right; font-size: 10px; }
+.g-hd-l ul li a { color: #fff; line-height: 37px; display: block; letter-spacing: 1px; }
+.g-hd-l ul li a:hover { color: #eee; }
+.g-hd-l ul li.weibo a { background: url(../images/weibo.png) no-repeat 0 0; padding-left: 34px; width: 52px; }
+.g-hd-l ul li.weibo a:hover { background: url(../images/weibo.png) no-repeat 0 -37px; }
+.g-hd-l ul li.g-hd-no-bg { background: none; }
+/*header右侧登陆框*/
+.m-log { float: right; padding-right: 7px; }
+.m-log ul { float: left;  color: #fff; font-size: 10px;  }
+.m-log ul li{ float: left;margin-left: 23px; height: 37px;  line-height: 37px; vertical-align:middle; }
+.m-log ul li label { letter-spacing: 1px; margin: 5px; }
+.m-log ul li.m-log-btn { margin-left: 12px; }
+.m-log ul li input { width: 84px; height: 21px; margin-left: 9px; border: none; line-height: 21px; text-indent: 2px; padding: 1px 0; _vertical-align: middle; _margin:2px 0;  }
+.m-log ul li.m-log-btn input { background: url(../images/g_hd_btn.png) no-repeat; border: none; color: #fff; width: 44px; height: 21px; margin: 4px 0; cursor: pointer; }
 /*+------------------------------------------------------+alert*/
 /* vim: fdm=marker
  */

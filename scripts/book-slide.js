@@ -28,7 +28,7 @@ $(document).ready(function(){
             if( counter <= 0 ){
                 $control.removeClass("disabled")
                 $rightBtn.addClass("disabled");
-            } else if( counter >= ( size / numoOfShow - 1 ) ){
+            } else if ( counter >= ( size / numoOfShow - 1 ) ){
                 $control.removeClass("disabled");
                 $leftBtn.addClass("disabled");
             } else {

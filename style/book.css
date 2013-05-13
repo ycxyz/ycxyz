@@ -462,12 +462,13 @@ clear: both;
     -o-transition:      all .1s linear;
     -webkit-transition: all .1s linear;
     transition:         all .1s linear;
+    cursor:pointer;
 }
 .book-control.left{
-    left:45px;
+    right:45px;
 }
 .book-control.right{
-    right:45px;
+    left:45px;
 }
 .book-control.disabled{
     opacity:0.2;
@@ -544,6 +545,8 @@ clear: both;
     padding-right:5px;
     border-radius:5px;
     color:yellow;
+    cursor:default;
+    font-size:12px;
 }
 .index.current{
     background:yellow;

@@ -333,17 +333,18 @@ html{
     margin-left:auto;
     margin-right:auto;
     text-align:center;
+    font-size: 13px;
 }
 .footer_inner a{
     display:inline-block;
     width:80px;
-    font-size: 12px;
     color:#fff;
     text-decoration:none;
 }
 .footer_inner p{
     color:#fff;
     margin:10px;
+    font-size: 12px;
 }
 .footer_inner a:hover,
 .footer_inner a:focus{

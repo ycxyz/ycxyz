@@ -153,7 +153,10 @@
     background-image:url(../images/box_title_type.png);
     _background-image:url(../images/box_title_type.gif);
     background-repeat:no-repeat;
-    background-position:10px 16px;
+    background-position:10px 27px;
+}
+.side_boxs .box.weibo-box .box_type{
+    background-position: 10px -265px;
 }
 .side_boxs .box.daily_english .box_type{
     background-position:10px -62px;
@@ -172,7 +175,7 @@
     background-position:10px -124px;
 }
 .side_boxs .box.big_event .box_type{
-    background-position:10px -203px;
+    background-position:10px -194px;
 }
 .side_boxs .box .box_body_wrap{
     background-image:url(../images/side_box_border.jpg);
@@ -495,6 +498,9 @@
 }
 .news_box.youandwe .topic_type{
     background-position:16px -38px;
+}
+.news_box.topic_before .topic_type{
+    background-position: 16px -289px;
 }
 .news_box.road .topic_type{
     background-position:16px -92px;

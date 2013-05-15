@@ -139,12 +139,13 @@
 .side_boxs .box{
     width:193px;
     padding-bottom:5px;
-    margin-bottom:0;
+    margin-bottom:11px;
     overflow:hidden;
 }
 .side_boxs .box .more{
     top:auto;
     bottom:15px;
+    font-size: 14px;
 }
 .side_boxs .box .box_type{
     width:164px;
@@ -160,6 +161,13 @@
 .side_boxs .box.daily_english li{
     text-align: center;
 }
+.side_boxs .box.daily_english .english-item{
+    margin-top: 5px;
+}
+.side_boxs .box.daily_english .english-item-en{
+    font-size: 12px;
+}
+.
 .side_boxs .box.topic_before .box_type{
     background-position:10px -124px;
 }
@@ -181,45 +189,72 @@
 }
 
 /*topic before+------------------------------------------------------+*/
-#scroller{
-    height:420px;
+.scroller{
     overflow:hidden;
+    height: 140px;
+    margin: 0 auto;
 }
 .scroll_item{
-    height:140px;
+    height: 140px;
+    width: 175px;
+    float: left;
 }
-#topic_before .box_body{
+.topic_before .scroll_item p{
+    margin-top: 13px;
+}
+.topic_before .box_body{
     padding-top:40px;
     padding-bottom:30px;
     position:relative;
 }
-#topic_before .box_body .scroller_inner{
+.topic_before .scroller{
+    width: 700px;
+}
+.topic_before .box_body .scroller_inner{
     _margin-left:20px;
+    width: 10000px;
 }
-#topic_before .up,
-#topic_before .down{
-    display:inline-block;
-    width:90px;
-    height:36px;
-    background-image:url(../images/up_down.png);
-    _background-image:url(../images/up_down.gif);
-    position:absolute;
-}
-#topic_before .up{
+.topic_before .up{
     top:0;
     left:50px;
 }
 .side_boxs .box .box_body{
-    width:153px;
+    width:183px;
     height:auto;
 }
-#topic_before .down{
+.topic_before .down{
     bottom:10px;
     left:50px;
     background-position:0 -30px;
 }
 .topic_before .scroll_item a{
     text-align:center;
+}
+.topic_before .scroller-control{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 60px;
+    background-image: url(../images/scroller-control.png);
+    background-image: url(../images/scroller-control.gif);
+    background-repeat: none;
+    cursor: pointer;
+    opacity: 0.1;
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=10);
+    -webkit-transition:opacity 0.2s;
+    transition: opacity .2s;
+}
+.topic_before:hover .scroller-control,
+.topic_before:focus .scroller-control{
+    opacity: 1;
+}
+.topic_before .scroller-control-left{
+    left: 10px;
+}
+.topic_before .scroller-control-right{
+    right: 10px;
+    background-position: -50px 0;
 }
 /*board+------------------------------------------------------+*/
 .board{
@@ -416,7 +451,7 @@
 }
 .news_list{
     float:left;
-    font-family:'微软雅黑','宋体';
+    font-family:'宋体';
     font-size:12px;
     padding-left:8px;
     background-repeat:no-repeat;
@@ -476,8 +511,15 @@
 /*overwirte*/
 .side_boxs .box.daily_english .box_body,
 .side_boxs .box.notif_box .box_body{
-    padding: 15px 10px 15px;
-    width: 173px;
+    padding: 10px 5px 10px;
+    width: 183px;
+    text-align: left;
+}
+.side_boxs .box.notif_box .box_body li{
+    background-image: url(../images/square.png);
+    background-repeat: no-repeat;
+    padding-left: 19px;
+    background-position: 7px 8px;
 }
 .side_boxs .box.weibo-box .box_body{
     padding: 10px 5px;

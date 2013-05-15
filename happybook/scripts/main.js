@@ -91,14 +91,28 @@ happybook.app.move1 = function()
 	var nextBar1 = happybook.tools.getElemsByClass(oMove1,'next')[0];
 	var oUl1 = oMove1.getElementsByTagName('ul')[0];
 	var aLi1 = oUl1.getElementsByTagName('li');
+
 	oUl1.innerHTML += oUl1.innerHTML;
 	oUl1.style.width = aLi1[0].offsetWidth * aLi1.length + 'px';
 	slide(prevBar1,nextBar1,oUl1,aLi1);
 
+
+	for (var i = 0; i < aLi1.length; i++) {
+		aLi1[i].index = i;
+		aLi1[i].onmouseover = function(){
+			var mask = happybook.tools.getElemsByClass(oUl1,'mask')[this.index];
+			mask.style.display = 'block';
+		};
+		aLi1[i].onmouseout = function(){
+			var mask = happybook.tools.getElemsByClass(oUl1,'mask')[this.index];
+			mask.style.display = 'none';
+		};
+	};
+
+
 	function slide(prevBar,nextBar,oUl,aLi)
 	{
-		var timer = setInterval(auto,3000);
-
+		var timer = setInterval(auto,4000);
 		prevBar.onmouseover = nextBar.onmouseover = oUl.onmouseover = function()
 		{
 			clearInterval(timer);
@@ -107,10 +121,11 @@ happybook.app.move1 = function()
 		};
 		prevBar.onmouseout = nextBar.onmouseout = oUl.onmouseout = function()
 		{
-			timer = setInterval(auto,3000);
+			timer = setInterval(auto,4000);
 			happybook.ui.animate(prevBar,{opacity:0});
 			happybook.ui.animate(nextBar,{opacity:0});
 		};
+
 
 		nextBar.onclick = function()
 		{
@@ -169,7 +184,7 @@ happybook.app.move2 = function()
 
 	function slide(prevBar,nextBar,oUl,aLi)
 	{
-		var timer = setInterval(auto,3000);
+		var timer = setInterval(auto,4000);
 
 		prevBar.onmouseover = nextBar.onmouseover = oUl.onmouseover = function()
 		{
@@ -177,7 +192,7 @@ happybook.app.move2 = function()
 		};
 		prevBar.onmouseout = nextBar.onmouseout = oUl.onmouseout = function()
 		{
-			timer = setInterval(auto,3000);
+			timer = setInterval(auto,4000);
 		};
 		nextBar.onclick = function()
 		{

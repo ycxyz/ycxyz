@@ -38,8 +38,34 @@
 .m-slide { margin-top: 10px; width: 966px; position: relative; background: #ac0001;  padding: 10px 5px; }
 .pic_wrap { height: 290px; width: 965px;  position: relative; overflow: hidden; margin: 0 auto; }
 .pic_wrap ul { position: absolute; left: 0; top: 0; }
-.pic_wrap ul li { float: left; }
-.pic_wrap ul li img { display:block; width:193px; height:288px; }
+.pic_wrap ul li { float: left; position: relative; display: block; }
+.pic_wrap ul li a{
+	 margin-right: 13px; 
+	 border: 1px solid #fff;
+	 display: block;
+	 width:180px; height:288px;
+}
+.pic_wrap ul li img { display:block; width:180px; height:288px; }
+ div.mask{
+	position: absolute;
+	left: 1px;
+	top: 1px;
+	text-align: center;
+	background: #000;
+	 width:180px; height:288px;
+	filter: alpha(opacity=80);
+	opacity: 0.8;
+	display: none;
+}
+div.mask a{
+	font: 400 14px 'Lato', Serif;
+	color: #91c3ff;
+	line-height: 288px;
+	letter-spacing: 2px;
+}
+div.mask a:hover{
+	text-decoration: underline;
+}
 .m-slide a.prev { background: url(../images/sld_btn_l.png) no-repeat ; position: absolute; left: -66px;top: 90px; width: 66px; height: 131px; filter:alpha(opacity:0); opacity: 0; }
 .m-slide a.next {  background: url(../images/sld_btn_r.png) no-repeat ; position: absolute; right: -66px; top: 90px; width: 66px; height: 131px; filter:alpha(opacity:0); opacity: 0; }
 .m-slide a.prev:hover{ background: url(../images/sld_btnl.png) no-repeat ; position: absolute; left: -66px;top: 90px; width: 66px; height: 131px; }

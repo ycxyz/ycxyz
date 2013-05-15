@@ -9,7 +9,7 @@
     var flag = 0;
 
     var scrollLeft = function(){
-        console.log( "left");
+        // console.log( "left");
         if( flag > $size - 5 ){     // number of showing up item plus 1
             $upBtn.fadeOut(function(){
                 $downBtn.fadeIn();
@@ -19,7 +19,7 @@
         $scroller.animate({"margin-left":"-=" + $animateWidth + "px"},500);
         flag += 1;
         $downBtn.fadeIn();
-        //console.log( flag );
+        // console.log( flag );
     };
 
     var scrollRight = function(){
@@ -32,7 +32,7 @@
         $scroller.animate({"margin-left":"+=" + $animateWidth + "px"},500);
         $upBtn.fadeIn();
         flag -= 1;
-        //console.log( flag );
+        // console.log( flag );
     };
 
     $upBtn.bind( "click", scrollLeft );

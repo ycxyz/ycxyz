@@ -56,7 +56,7 @@ happybook.ui.animate = function(obj,json,fn)
 				cur = parseInt(happybook.tools.attrValue(obj,attr));
 			}
 			//开始运动
-			var step = (json[attr]-cur)/10;//运动速度
+			var step = (json[attr]-cur)/6;//运动速度
 			step=step>0?Math.ceil(step):Math.floor(step);//>0向上取整,<0向下取整
 
 			if(cur!=json[attr])
@@ -97,17 +97,17 @@ happybook.app.move1 = function()
 	slide(prevBar1,nextBar1,oUl1,aLi1);
 
 
-	for (var i = 0; i < aLi1.length; i++) {
-		aLi1[i].index = i;
-		aLi1[i].onmouseover = function(){
-			var mask = happybook.tools.getElemsByClass(oUl1,'mask')[this.index];
-			mask.style.display = 'block';
-		};
-		aLi1[i].onmouseout = function(){
-			var mask = happybook.tools.getElemsByClass(oUl1,'mask')[this.index];
-			mask.style.display = 'none';
-		};
-	};
+	// for (var i = 0; i < aLi1.length; i++) {
+	// 	aLi1[i].index = i;
+	// 	aLi1[i].onmouseover = function(){
+	// 		var mask = happybook.tools.getElemsByClass(oUl1,'mask')[this.index];
+	// 		mask.style.display = 'block';
+	// 	};
+	// 	aLi1[i].onmouseout = function(){
+	// 		var mask = happybook.tools.getElemsByClass(oUl1,'mask')[this.index];
+	// 		mask.style.display = 'none';
+	// 	};
+	// };
 
 
 	function slide(prevBar,nextBar,oUl,aLi)

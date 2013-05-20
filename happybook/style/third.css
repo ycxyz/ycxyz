@@ -9,13 +9,18 @@
 }
 
 .m-tbook-cnt h2{
-	font-size: 15px;
-	font-family: "微软雅黑";
+	font: 21px/1.2 "微软雅黑","黑体";
 	color: #ac0001;
 }
 .cnt_wraper{
 	position: relative;
 	margin-top: 20px;
+}
+.cnt_wraper img{
+	-webkit-box-shadow: 1px 2px 1px 3px;
+	-moz-box-shadow: 1px 2px 1px 3px;
+	box-shadow: 1px 1px 2px 3px;
+	color: #777;
 }
 .cnt_detail{
 	width: 375px;
@@ -23,11 +28,11 @@
 	margin-right: 10px;
 }
 .cnt_detail p{
-	font-size: 12px;
-	text-indent: 30px;
-	letter-spacing: 1px;
-	line-height: 25px;
+	font-size: 14px;
+	letter-spacing: 1.2px;
+	line-height: 20px;
 	overflow: auto;
+	padding: 11px 0;
 }
 .cnt_detail p span.read-more {
 	text-indent: 0;
@@ -77,8 +82,9 @@
 	letter-spacing: 3px;
 	line-height: 20px;
 }
-.cnt_detail span.download a:hover{
+.cnt_detail span.dld a:hover{
 	text-decoration: underline;
+	background: #d2d2d2;
 }
 
 .other{
@@ -98,16 +104,22 @@
 	height: 25px;
 }
 .other ul{
-	width: 610px;
+	width: 590px;
 	position: relative;
 	margin-top: 20px;
 	overflow: auto;
+	padding: 10px;
 }
 .other ul li{
 	float: left;
-	margin-right: 35px;
-	border: 1px solid #7a7a7a;
+	margin-right: 20px;
+	border: 1px solid #ddd;
 	width: 115px;
+	padding: 5px;
+	background: #fff;
+	-webkit-box-shadow: 1px 1px 1px 0.3px;
+	-moz-box-shadow: 1px 1px 1px 0.3px;
+	box-shadow: 1px 1px 1px 0.3px;
 }
 .other ul li a,.other ul li img{
 	display: block;

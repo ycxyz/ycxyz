@@ -10,21 +10,25 @@
 }
 
 .m-sbook-cnt ul li{
-	margin: 10px;
-	overflow: auto;
+	overflow: hidden;
 }
 .m-sbook-cnt div.sbook-detail{
 	width: 588px;
 	position: relative;
 	overflow: hidden;
 	margin: 0 auto;
+	border-bottom: 1px solid #d2d2d2;
+	padding: 17px 0 15px 5px;
 }
 .m-sbook-cnt ul li a.sb-img{
-	border: 1px solid #333;
+	border: 1px solid #eee;
 	display: block;
 	width: 114px;
 	height: 167px;
 	float: left;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
 .m-sbook-cnt ul li div.desc{
 	width: 450px;
@@ -38,22 +42,29 @@
 	margin-bottom: 10px;
 }
 .m-sbook-cnt h3 a{
-	color: #ac0001;
-	font-family: "微软雅黑";
+	color: #333;
+	font: 21px/1.2 "微软雅黑","黑体";
+}
+.m-sbook-cnt h3 a:hover{
+	color: #ca0001;
 }
 
 .m-sbook-cnt div.desc span{
 	display: block;
-	font-weight: bold;
-	color: #ac0001;
-	line-height: 20px;
-	font-size: 13px;
+	height: 25px;
+	color: #999;
+	line-height: 25px;
+	font-family: "宋体","Arial Narrow",sans-serif;
+	font-size: 12px;
+	padding-left: 15px;
+	float: left;
 }
 .m-sbook-cnt div.desc p{
+	clear: both;
 	margin-top: 5px;
-	text-indent: 30px;
 	letter-spacing: 1.5px;
-	line-height: 25px;
+	line-height: 28px;
+	font-size: 14px;
 }
 .m-sbook-cnt div.desc p span{
 	text-align: right;

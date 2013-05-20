@@ -36,16 +36,25 @@
 
 /*幻灯片*/
 .m-slide { margin-top: 10px; width: 966px; position: relative; background: #ac0001;  padding: 10px 5px; }
-.pic_wrap { height: 290px; width: 965px;  position: relative; overflow: hidden; margin: 0 auto; }
+.pic_wrap { height: 290px; width: 960px;  position: relative; overflow: hidden; margin: 0 auto; }
 .pic_wrap ul { position: absolute; left: 0; top: 0; }
 .pic_wrap ul li { float: left; position: relative; display: block; }
 .pic_wrap ul li a{
-	 margin-right: 13px; 
-	 border: 1px solid #fff;
+	 margin-right: 10px; 
+	 border: 2px solid #ccc;
 	 display: block;
-	 width:180px; height:288px;
+	 width:160px; height:260px;
+	 padding: 10px;
+	 background: #fff;
+	 -webkit-border-radius: 5px;
+	 -moz-border-radius: 5px;
+	 border-radius: 5px;
 }
-.pic_wrap ul li img { display:block; width:180px; height:288px; }
+.pic_wrap ul li a:hover{
+	border: 2px solid #00b4ff;
+	background: #ccc;
+}
+.pic_wrap ul li img { display:block; width:160px; height:260px; }
  div.mask{
 	position: absolute;
 	left: 1px;

@@ -375,14 +375,3 @@ table {
     margin-top: 24px;
 }
 
-/*下载排行模块*/
-.cnt_dld { width: 312px; position: relative; }
-.cnt_dld h3 {  font-family: "微软雅黑"; font-size: 15px;  line-height: 30px; margin-bottom: 10px; }
-.cnt_dld h3 a { color: #ac0001; }
-.cnt_dld h3 span{ color: #0d0001; }
-.cnt_dld ul {  background: #f4f4f4;  height: 320px; padding: 10px 0; }
-.cnt_dld ul li { float: left;  width: 310px; display: block; height: 22px; line-height: 22px; position: relative; margin: 5px 0; }
-.cnt_dld ul li,.cnt_dld ul li a {  color: #414141;font-family: 宋体B8B\4F53, "Arial Narrow";font-size: 12px;  }
-.cnt_dld ul li a { margin-left: 5px; line-height: 22px; }
-.cnt_dld ul li p { position: absolute; right: 0; top: 0; text-align: left; width: 70px;   }
-.cnt_dld ul li span { width: 22px; height: 22px; margin-left: 20px; background: #a5a5a5; float: left; color: #fff; text-align: center; line-height: 22px; }

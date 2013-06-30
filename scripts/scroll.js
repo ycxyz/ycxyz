@@ -4,16 +4,10 @@
     var $items = $(".scroll_item");
     var $size = $items.size();
     var $animateWidth = $items.width();
-    var $upBtn = $("#topic_before .scroller-control-left");
-    var $downBtn = $("#topic_before .scroller-control-right");
-    var flag = $size - 4;
+    var $downBtn = $("#topic_before .scroller-control-left");
+    var $upBtn = $("#topic_before .scroller-control-right");
+    var flag = 0 ;
 
-    var initMarginLeft = function() {
-        var m = ($size - 4) * $animateWidth
-        $scroller.css('margin-left',-m+"px");
-    };
-
-    initMarginLeft();
     var scrollLeft = function(){
         // console.log( "left");
         if( flag > $size - 5 ){     // number of showing up item plus 1

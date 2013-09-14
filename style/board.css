@@ -1,0 +1,12 @@
+.board li{
+    float: left;
+}
+.board .tag{
+    border:1px solid blue;
+    height:100px;
+    width: 100px;
+}
+.board .dragging{
+    z-index:999;
+    opacity: 1;
+}

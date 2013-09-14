@@ -1,12 +1,28 @@
+.board{
+    padding: 20px;
+    height:136px;
+}
 .board li{
     float: left;
 }
 .board .tag{
-    border:1px solid blue;
-    height:100px;
-    width: 100px;
+    width: 115px;
 }
 .board .dragging{
     z-index:999;
-    opacity: 1;
+    opacity: 0.9;
+    -moz-transform:    scale(1.15);
+    -ms-transform:     scale(1.15);
+    -o-transform:      scale(1.15);
+    -webkit-transform: scale(1.15);
+    transform:         scale(1.15);
+    -moz-transition:    opacity .2s linear;
+    -ms-transition:     opacity .2s linear;
+    -o-transition:      opacity .2s linear;
+    -webkit-transition: opacity .2s linear;
+    transition:         opacity .2s linear;
+}
+.tag img{
+    display:block;
+    padding:5px;
 }

@@ -92,6 +92,18 @@ happybook.app.move1 = function()
 	var oUl1 = oMove1.getElementsByTagName('ul')[0];
 	var aLi1 = oUl1.getElementsByTagName('li');
 
+    var need = 5 - aLi1.length % 5;
+
+    var frag = document.createDocumentFragment();
+    for (var i = 0; i < need; ++i) {
+        var li = document.createElement('li');
+        li.className = "empty";
+        li.innerHTML = "<a></a>";
+        frag.appendChild(li);
+    }
+
+    oUl1.appendChild(frag);
+
 	oUl1.innerHTML += oUl1.innerHTML;
 	oUl1.style.width = aLi1[0].offsetWidth * aLi1.length + 'px';
 	slide(prevBar1,nextBar1,oUl1,aLi1);
@@ -177,6 +189,18 @@ happybook.app.move2 = function()
 	var nextBar2 = happybook.tools.getElemsByClass(oMove2,'lr_next')[0];
 	var oUl2 = oMove2.getElementsByTagName('ul')[0];
 	var aLi2 = oUl2.getElementsByTagName('li');
+
+    var need = 5 - aLi2.length % 5;
+
+    var frag = document.createDocumentFragment();
+    for (var i = 0; i < need; ++i) {
+        var li = document.createElement('li');
+        li.className = 'empty';
+        li.innerHTML = '<a></a>';
+        frag.appendChild(li);
+    }
+    oUl2.appendChild(frag);
+
 	oUl2.innerHTML += oUl2.innerHTML;
 	oUl2.style.width = aLi2[0].offsetWidth * aLi2.length + 'px';
 	slide(prevBar2,nextBar2,oUl2,aLi2);
@@ -185,7 +209,6 @@ happybook.app.move2 = function()
 	function slide(prevBar,nextBar,oUl,aLi)
 	{
 		var timer = setInterval(auto,4000);
-
 		prevBar.onmouseover = nextBar.onmouseover = oUl.onmouseover = function()
 		{
 			clearInterval(timer);

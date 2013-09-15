@@ -38,7 +38,12 @@
 .m-slide { margin-top: 10px; width: 966px; position: relative; background: #ac0001;  padding: 10px 5px; }
 .pic_wrap { height: 290px; width: 960px;  position: relative; overflow: hidden; margin: 0 auto; }
 .pic_wrap ul { position: absolute; left: 0; top: 0; }
-.pic_wrap ul li { float: left; position: relative; display: block; }
+.pic_wrap ul li {
+    float: left;
+    position: relative;
+    display: block;
+    width: 194px;
+ }
 .pic_wrap ul li a{
 	 margin-right: 10px; 
 	 border: 2px solid #ccc;
@@ -49,6 +54,11 @@
 	 -webkit-border-radius: 5px;
 	 -moz-border-radius: 5px;
 	 border-radius: 5px;
+}
+.pic_wrap ul li.empty a,
+.pic_wrap ul li.empty a:hover{
+    background: none;
+    border: 2px solid transparent;
 }
 .pic_wrap ul li a:hover{
 	border: 2px solid #00b4ff;
